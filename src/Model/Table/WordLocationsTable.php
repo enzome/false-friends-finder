@@ -82,7 +82,7 @@ class WordLocationsTable extends Table
             $this->save($found);
             return 'incremented';
         } else {
-            $additional = $this->patchEntity($this->newEntity(), ['word_id' => $entity_id, 'url' => $url, 'count' => 1]);
+            $additional = $this->patchEntity($this->newEntity(), ['word_id' => $entity_id, 'url' => $url, 'count' => '1']);
             if ($this->save($additional)) {
                 return 'added new URL';
             } else {

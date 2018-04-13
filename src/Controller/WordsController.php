@@ -86,6 +86,8 @@ class WordsController extends AppController
      */
     public function add()
     {
+        $word = $this->Words->newEntity();
+        $languages = $this->Words->Languages->find('list');
         if ($this->request->is('post')) {
             $word = $this->Words->newEntity();
 
@@ -124,6 +126,7 @@ class WordsController extends AppController
             }
             return $this->response->withStringBody($restext);
         }
+        $this->set(compact('word', 'languages'));
     }
 
     private function strip_punctuation($string) {
