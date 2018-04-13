@@ -1,127 +1,114 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: False Friends Finder\n"
-"POT-Creation-Date: 2018-04-13 23:44+0200\n"
-"PO-Revision-Date: 2018-04-14 00:07+0200\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2018-04-14 00:12+0200\n"
+"PO-Revision-Date: 2018-04-14 00:24+0200\n"
 "Last-Translator: Enzo Angiulli <mynameisenzo@gmail.com>\n"
-"Language-Team: Enzo Team\n"
-"Language: it\n"
+"Language-Team: \n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.0.5\n"
 "X-Poedit-Basepath: ../..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: Controller/ClassificationsController.php:55
 #: Controller/ClassificationsController.php:79
 msgid "The classification has been saved."
-msgstr "La classificazione é stata salvata."
+msgstr "A besorolás mentésre került."
 
 #: Controller/ClassificationsController.php:59
 #: Controller/ClassificationsController.php:83
 msgid "The classification could not be saved. Please, try again."
-msgstr "L’etichetta non è stata salvata. Prova di nuovo."
+msgstr "A besorolást nem lehetett menteni, próbáld később."
 
 #: Controller/ClassificationsController.php:100
 msgid "The classification has been deleted."
-msgstr "La classificazione é stata eliminata."
+msgstr "A besorolás törölve."
 
 #: Controller/ClassificationsController.php:102
 msgid "The classification could not be deleted. Please, try again."
-msgstr "L’etichetta non è stata salvata. Prova di nuovo."
+msgstr "A besorolás nem törölhető. Kérjük próbálja meg újra."
 
 #: Controller/LanguagesController.php:55 Controller/LanguagesController.php:79
 msgid "The language has been saved."
-msgstr "La lingua è stata salvata."
+msgstr "A nyelv lett mentve."
 
 #: Controller/LanguagesController.php:59 Controller/LanguagesController.php:83
-#, fuzzy
 msgid "The language could not be saved. Please, try again."
-msgstr "L’etichetta non è stata salvata. Prova di nuovo."
+msgstr "A nyelv mentése nem sikerült, próbáld újra."
 
 #: Controller/LanguagesController.php:100
-#, fuzzy
 msgid "The language has been deleted."
-msgstr "La lingua è stata salvata."
+msgstr "A nyelv törölve lett."
 
 #: Controller/LanguagesController.php:102
-#, fuzzy
 msgid "The language could not be deleted. Please, try again."
-msgstr "L’etichetta non è stata salvata. Prova di nuovo."
+msgstr "A nyelv nem törölhető. Kérjük próbálja meg újra."
 
 #: Controller/WordConnectionsController.php:73
 #: Controller/WordConnectionsController.php:100
-#, fuzzy
 msgid "The word connection has been saved."
-msgstr "La classificazione é stata salvata."
+msgstr "A szavak közötti kapcsolat létrehozása sikers."
 
 #: Controller/WordConnectionsController.php:77
 #: Controller/WordConnectionsController.php:104
-#, fuzzy
 msgid "The word connection could not be saved. Please, try again."
-msgstr "L’etichetta non è stata salvata. Prova di nuovo."
+msgstr "A szavak között nem sikerült menteni a kapcsolatot."
 
 #: Controller/WordConnectionsController.php:124
 msgid "The word connection has been deleted."
-msgstr ""
+msgstr "A szavak közötti kapcsolat mentésre került."
 
 #: Controller/WordConnectionsController.php:126
 msgid "The word connection could not be deleted. Please, try again."
-msgstr ""
+msgstr "A szavak között nem sikerült menteni a kapcsolatot."
 
 #: Controller/WordLocationsController.php:76
 #, php-format
 msgid "Deleted %s locations and %s words"
-msgstr ""
+msgstr "Törölt források: %s , Törölt szavak: %s"
 
 #: Controller/WordLocationsController.php:91
 #: Controller/WordLocationsController.php:116
-#, fuzzy
 msgid "The word location has been saved."
-msgstr "La classificazione é stata salvata."
+msgstr "A szó helye mentésre került."
 
 #: Controller/WordLocationsController.php:95
 #: Controller/WordLocationsController.php:120
-#, fuzzy
 msgid "The word location could not be saved. Please, try again."
-msgstr "L’etichetta non è stata salvata. Prova di nuovo."
+msgstr "A szó helyét nem lehetett elmenteni."
 
 #: Controller/WordLocationsController.php:138
 msgid "The word location has been deleted."
-msgstr ""
+msgstr "A hely sikeresen törölve."
 
 #: Controller/WordLocationsController.php:140
 msgid "The word location could not be deleted. Please, try again."
-msgstr ""
+msgstr "A linket nem lehetett törölni."
 
 #: Controller/WordsController.php:57
-#, fuzzy
 msgid "Currently that language is not supported ;)"
-msgstr "Aggiungi lingua"
+msgstr "Az általad kiválasztott nyelvet a rendszer nem támogatja"
 
 #: Controller/WordsController.php:95 Controller/WordsController.php:172
-#, fuzzy
 msgid "The word has been saved."
-msgstr "La lingua è stata salvata."
+msgstr "A szó mentésre került."
 
 #: Controller/WordsController.php:99 Controller/WordsController.php:176
-#, fuzzy
 msgid "The word could not be saved. Please, try again."
-msgstr "L’etichetta non è stata salvata. Prova di nuovo."
+msgstr "A szót nem lehetett elmenteni."
 
 #: Controller/WordsController.php:194
-#, fuzzy
 msgid "The word has been deleted."
-msgstr "La lingua è stata salvata."
+msgstr "A szó törölve lett."
 
 #: Controller/WordsController.php:196
-#, fuzzy
 msgid "The word could not be deleted. Please, try again."
-msgstr "L’etichetta non è stata salvata. Prova di nuovo."
+msgstr "A szót nem lehetett törölni."
 
 #: Template/Classifications/add.ctp:9 Template/Classifications/edit.ctp:9
 #: Template/Classifications/index.ctp:9 Template/Classifications/index.ctp:26
@@ -139,7 +126,7 @@ msgstr "L’etichetta non è stata salvata. Prova di nuovo."
 #: Template/Words/index.ctp:9 Template/Words/index.ctp:29
 #: Template/Words/view.ctp:9 Template/Words/view.ctp:49
 msgid "Actions"
-msgstr "Possibilitá"
+msgstr "Opciók"
 
 #: Template/Classifications/add.ctp:10 Template/Classifications/edit.ctp:10
 #: Template/Classifications/index.ctp:10 Template/Classifications/view.ctp:10
@@ -154,7 +141,7 @@ msgstr "Possibilitá"
 #: Template/Words/friends.ctp:26 Template/Words/index.ctp:10
 #: Template/Words/view.ctp:10
 msgid "Friends"
-msgstr "Falsi amici"
+msgstr "Barátok"
 
 #: Template/Classifications/add.ctp:11 Template/Classifications/edit.ctp:11
 #: Template/Classifications/index.ctp:11 Template/Classifications/view.ctp:11
@@ -168,7 +155,7 @@ msgstr "Falsi amici"
 #: Template/Words/edit.ctp:11 Template/Words/friends.ctp:15
 #: Template/Words/index.ctp:11 Template/Words/view.ctp:11
 msgid "Connections"
-msgstr "Amicizie Classificate"
+msgstr "Kapcsolatok"
 
 #: Template/Classifications/add.ctp:12 Template/Classifications/edit.ctp:12
 #: Template/Classifications/index.ctp:12 Template/Classifications/view.ctp:12
@@ -182,31 +169,31 @@ msgstr "Amicizie Classificate"
 #: Template/Words/edit.ctp:12 Template/Words/friends.ctp:16
 #: Template/Words/index.ctp:12 Template/Words/view.ctp:12
 msgid "Delete Locations"
-msgstr "Cancella URL"
+msgstr "Linkek törlése"
 
 #: Template/Classifications/add.ctp:14 Template/Classifications/edit.ctp:20
 #: Template/Classifications/view.ctp:16 Template/WordConnections/add.ctp:17
 #: Template/WordConnections/edit.ctp:23 Template/WordConnections/index.ctp:17
 #: Template/WordConnections/view.ctp:22
 msgid "List Classifications"
-msgstr "Elenca Classificazioni"
+msgstr "Besorolások listázása"
 
 #: Template/Classifications/add.ctp:15 Template/Classifications/edit.ctp:21
 #: Template/Classifications/index.ctp:15 Template/Classifications/view.ctp:18
 #: Template/WordConnections/add.ctp:14 Template/WordConnections/edit.ctp:20
 #: Template/WordConnections/view.ctp:16
 msgid "List Word Connections"
-msgstr "Elenco Connessioni"
+msgstr "Szókapcsolatok listázása"
 
 #: Template/Classifications/add.ctp:16 Template/Classifications/edit.ctp:22
 #: Template/Classifications/index.ctp:16 Template/Classifications/view.ctp:19
 #: Template/WordConnections/index.ctp:14 Template/WordConnections/view.ctp:17
 msgid "New Word Connection"
-msgstr "Nuova Amicizia"
+msgstr "Új szókapcsolat"
 
 #: Template/Classifications/add.ctp:22
 msgid "Add Classification"
-msgstr "Aggiungi Classificazione"
+msgstr "Besorolás hozzáadása"
 
 #: Template/Classifications/add.ctp:27 Template/Classifications/edit.ctp:33
 #: Template/Languages/add.ctp:27 Template/Languages/edit.ctp:33
@@ -215,7 +202,7 @@ msgstr "Aggiungi Classificazione"
 #: Template/WordLocations/edit.ctp:35 Template/Words/add.ctp:30
 #: Template/Words/edit.ctp:36
 msgid "Submit"
-msgstr "Salva"
+msgstr "Mentés"
 
 #: Template/Classifications/edit.ctp:15 Template/Classifications/index.ctp:37
 #: Template/Classifications/view.ctp:56 Template/Languages/edit.ctp:15
@@ -225,7 +212,7 @@ msgstr "Salva"
 #: Template/Words/edit.ctp:15 Template/Words/friends.ctp:45
 #: Template/Words/index.ctp:41 Template/Words/view.ctp:60
 msgid "Delete"
-msgstr "Cancella"
+msgstr "Törlés"
 
 #: Template/Classifications/edit.ctp:17 Template/Classifications/index.ctp:37
 #: Template/Classifications/view.ctp:15 Template/Classifications/view.ctp:56
@@ -237,59 +224,59 @@ msgstr "Cancella"
 #: Template/Words/edit.ctp:17 Template/Words/index.ctp:41
 #: Template/Words/view.ctp:15 Template/Words/view.ctp:60
 msgid "Are you sure you want to delete # {0}?"
-msgstr "Vuoi cancellare nr. {0}?"
+msgstr "Biztos törlöd  # {0}?"
 
 #: Template/Classifications/edit.ctp:28 Template/Classifications/view.ctp:14
 msgid "Edit Classification"
-msgstr "Modifica Classificazione"
+msgstr "Besorolás szerkesztése"
 
 #: Template/Classifications/index.ctp:14 Template/Classifications/view.ctp:17
 #: Template/WordConnections/add.ctp:18 Template/WordConnections/edit.ctp:24
 #: Template/WordConnections/index.ctp:18 Template/WordConnections/view.ctp:23
 msgid "New Classification"
-msgstr "Nuova Classificazione"
+msgstr "Besorolás hozzáadása"
 
 #: Template/Classifications/index.ctp:20
 msgid "Classifications"
-msgstr "Classificazioni"
+msgstr "Besorolások"
 
 #: Template/Classifications/index.ctp:35 Template/Classifications/view.ctp:54
 #: Template/Languages/index.ctp:35 Template/Languages/view.ctp:50
 #: Template/WordConnections/index.ctp:43 Template/WordLocations/index.ctp:39
 #: Template/Words/index.ctp:39 Template/Words/view.ctp:58
 msgid "View"
-msgstr "Apri"
+msgstr "Megtekintés"
 
 #: Template/Classifications/index.ctp:36 Template/Classifications/view.ctp:55
 #: Template/Languages/index.ctp:36 Template/Languages/view.ctp:51
 #: Template/WordConnections/index.ctp:44 Template/WordLocations/index.ctp:40
 #: Template/Words/index.ctp:40 Template/Words/view.ctp:59
 msgid "Edit"
-msgstr "Modifica"
+msgstr "Szerkesztés"
 
 #: Template/Classifications/index.ctp:45 Template/Languages/index.ctp:45
 #: Template/WordConnections/index.ctp:53 Template/WordLocations/index.ctp:49
 #: Template/Words/index.ctp:49
 msgid "first"
-msgstr "primo"
+msgstr "első"
 
 #: Template/Classifications/index.ctp:46 Template/Languages/index.ctp:46
 #: Template/WordConnections/index.ctp:54 Template/WordLocations/index.ctp:50
 #: Template/Words/index.ctp:50
 msgid "previous"
-msgstr "precedente"
+msgstr "előző"
 
 #: Template/Classifications/index.ctp:48 Template/Languages/index.ctp:48
 #: Template/WordConnections/index.ctp:56 Template/WordLocations/index.ctp:52
 #: Template/Words/index.ctp:52
 msgid "next"
-msgstr "prossimo"
+msgstr "következő"
 
 #: Template/Classifications/index.ctp:49 Template/Languages/index.ctp:49
 #: Template/WordConnections/index.ctp:57 Template/WordLocations/index.ctp:53
 #: Template/Words/index.ctp:53
 msgid "last"
-msgstr "ultimo"
+msgstr "utolsó"
 
 #: Template/Classifications/index.ctp:51 Template/Languages/index.ctp:51
 #: Template/WordConnections/index.ctp:59 Template/WordLocations/index.ctp:55
@@ -298,56 +285,51 @@ msgid ""
 "Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} "
 "total"
 msgstr ""
-"Page {{page}} da {{pages}}, visualizzando {{current}} oggetti dal totale "
-"{{count}}"
+"Oldal {{page}}/{{pages}}, jelenleg látható {{current}} szó a {{count}} "
+"találatból"
 
 #: Template/Classifications/view.ctp:15
 msgid "Delete Classification"
-msgstr "Elimina classificazione"
+msgstr "Besorolás törlése"
 
 #: Template/Classifications/view.ctp:26 Template/Languages/view.ctp:26
 msgid "Name"
-msgstr "Nome"
+msgstr "Név"
 
 #: Template/Classifications/view.ctp:30 Template/Classifications/view.ctp:39
 #: Template/Languages/view.ctp:30 Template/Languages/view.ctp:39
 #: Template/WordConnections/view.ctp:46 Template/WordLocations/view.ctp:34
 #: Template/Words/view.ctp:36 Template/Words/view.ctp:45
 msgid "Id"
-msgstr "Id"
+msgstr "ID"
 
 #: Template/Classifications/view.ctp:35
-#, fuzzy
 msgid "Related Word Connections"
-msgstr "Elenco Connessioni"
+msgstr "Kapcsolatok"
 
 #: Template/Classifications/view.ctp:40
-#, fuzzy
 msgid "From Id"
-msgstr "ID lingua"
+msgstr "Magyar szó ID"
 
 #: Template/Classifications/view.ctp:41
-#, fuzzy
 msgid "To Id"
-msgstr "ID lingua"
+msgstr "Olasz szó ID"
 
 #: Template/Classifications/view.ctp:42
-#, fuzzy
 msgid "Classification Id"
-msgstr "Aggiungi Classificazione"
+msgstr "Besorolás ID"
 
 #: Template/Classifications/view.ctp:43 Template/WordConnections/view.ctp:42
 msgid "Description"
-msgstr "Descrizione"
+msgstr "Leírás"
 
 #: Template/Languages/add.ctp:14 Template/Languages/edit.ctp:20
 #: Template/Languages/view.ctp:16 Template/WordLocations/deleteurl.ctp:15
 #: Template/Words/add.ctp:15 Template/Words/edit.ctp:21
 #: Template/Words/friends.ctp:19 Template/Words/index.ctp:15
 #: Template/Words/view.ctp:18
-#, fuzzy
 msgid "List Languages"
-msgstr "Lingue"
+msgstr "Nyelvek"
 
 #: Template/Languages/add.ctp:15 Template/Languages/edit.ctp:21
 #: Template/Languages/index.ctp:15 Template/Languages/view.ctp:18
@@ -355,9 +337,8 @@ msgstr "Lingue"
 #: Template/WordLocations/edit.ctp:21 Template/WordLocations/index.ctp:15
 #: Template/WordLocations/view.ctp:18 Template/Words/add.ctp:14
 #: Template/Words/edit.ctp:20 Template/Words/view.ctp:16
-#, fuzzy
 msgid "List Words"
-msgstr "Dizionario dei sinonimiName"
+msgstr "Szavak"
 
 #: Template/Languages/add.ctp:16 Template/Languages/edit.ctp:22
 #: Template/Languages/index.ctp:16 Template/Languages/view.ctp:19
@@ -366,209 +347,189 @@ msgstr "Dizionario dei sinonimiName"
 #: Template/Words/friends.ctp:18 Template/Words/index.ctp:14
 #: Template/Words/view.ctp:17
 msgid "New Word"
-msgstr "Nuova parola"
+msgstr "Új szó"
 
 #: Template/Languages/add.ctp:22
 msgid "Add Language"
-msgstr "Aggiungi lingua"
+msgstr "Nyelv hozzáadása"
 
 #: Template/Languages/edit.ctp:28 Template/Languages/view.ctp:14
-#, fuzzy
 msgid "Edit Language"
-msgstr "Lingua"
+msgstr "Nyelv szerkesztése"
 
 #: Template/Languages/index.ctp:14 Template/Languages/view.ctp:17
 #: Template/WordLocations/deleteurl.ctp:16 Template/Words/add.ctp:16
 #: Template/Words/edit.ctp:22 Template/Words/friends.ctp:20
 #: Template/Words/index.ctp:16 Template/Words/view.ctp:19
 msgid "New Language"
-msgstr "Nuova linguaEdit language properties"
+msgstr "Új nyelv"
 
 #: Template/Languages/index.ctp:20
 msgid "Languages"
-msgstr "Lingue"
+msgstr "Nyelvek"
 
 #: Template/Languages/view.ctp:15
 msgid "Delete Language"
-msgstr "Elimina Lingua"
+msgstr "Nyelv törlése"
 
 #: Template/Languages/view.ctp:35
 msgid "Related Words"
-msgstr "Dizionario dei sinonimiName"
+msgstr "Kapcsolódó szavak"
 
 #: Template/Languages/view.ctp:40 Template/WordLocations/view.ctp:26
 #: Template/Words/friends.ctp:30 Template/Words/view.ctp:28
 msgid "Word"
-msgstr "Parola"
+msgstr "Szó"
 
 #: Template/Languages/view.ctp:41
 msgid "Language Id"
-msgstr "ID lingua"
+msgstr "Nyelvi azonosító"
 
 #: Template/Layout/error.ctp:35
 msgid "Error"
-msgstr "Errore"
+msgstr "Hiba"
 
 #: Template/Layout/error.ctp:43
 msgid "Back"
-msgstr "Indietro"
+msgstr "Vissza"
 
 #: Template/WordConnections/add.ctp:15 Template/WordConnections/edit.ctp:21
 #: Template/WordConnections/index.ctp:15 Template/WordConnections/view.ctp:18
-#, fuzzy
 msgid "List From Words"
-msgstr "Dizionario dei sinonimiName"
+msgstr "Szavak"
 
 #: Template/WordConnections/add.ctp:16 Template/WordConnections/edit.ctp:22
 #: Template/WordConnections/index.ctp:16 Template/WordConnections/view.ctp:19
-#, fuzzy
 msgid "New From Word"
-msgstr "Nuova Amicizia"
+msgstr "Új magyar szó"
 
 #: Template/WordConnections/add.ctp:24
-#, fuzzy
 msgid "Add Word Connection"
-msgstr "Nuova Amicizia"
+msgstr "Új szókapcsolat"
 
 #: Template/WordConnections/edit.ctp:30 Template/WordConnections/view.ctp:14
-#, fuzzy
 msgid "Edit Word Connection"
-msgstr "Nuova Amicizia"
+msgstr "Szókapcsolat szerkesztése"
 
 #: Template/WordConnections/index.ctp:22
-#, fuzzy
 msgid "Word Connections"
-msgstr "Elenco Connessioni"
+msgstr "Kapcsolatok"
 
 #: Template/WordConnections/view.ctp:15
-#, fuzzy
 msgid "Delete Word Connection"
-msgstr "Nuova Amicizia"
+msgstr "Szókapcsolat törlése"
 
 #: Template/WordConnections/view.ctp:20
-#, fuzzy
 msgid "List To Words"
-msgstr "Dizionario dei sinonimiName"
+msgstr "Olasz szavak"
 
 #: Template/WordConnections/view.ctp:21
-#, fuzzy
 msgid "New To Word"
-msgstr "Nuova Amicizia"
+msgstr "Új olasz szó"
 
 #: Template/WordConnections/view.ctp:30
-#, fuzzy
 msgid "From Word"
-msgstr "Nuova parola"
+msgstr "Magyar szó"
 
 #: Template/WordConnections/view.ctp:34
-#, fuzzy
 msgid "To Word"
-msgstr "Parola"
+msgstr "Olasz szó"
 
 #: Template/WordConnections/view.ctp:38
-#, fuzzy
 msgid "Classification"
-msgstr "La classificazione é stata salvata."
+msgstr "Besorolás"
 
 #: Template/WordLocations/add.ctp:14 Template/WordLocations/deleteurl.ctp:17
 #: Template/WordLocations/deleteurl.ctp:18 Template/WordLocations/edit.ctp:20
 #: Template/WordLocations/view.ctp:16 Template/Words/add.ctp:17
 #: Template/Words/edit.ctp:23 Template/Words/friends.ctp:21
 #: Template/Words/index.ctp:17 Template/Words/view.ctp:20
-#, fuzzy
 msgid "List Word Locations"
-msgstr "Elenco Connessioni"
+msgstr "Szó források"
 
 #: Template/WordLocations/add.ctp:22
-#, fuzzy
 msgid "Add Word Location"
-msgstr "Aggiungi parola"
+msgstr "Forrás hozzáadása"
 
 #: Template/WordLocations/deleteurl.ctp:19 Template/WordLocations/index.ctp:14
 #: Template/WordLocations/view.ctp:17 Template/Words/add.ctp:18
 #: Template/Words/edit.ctp:24 Template/Words/friends.ctp:22
 #: Template/Words/index.ctp:18 Template/Words/view.ctp:21
-#, fuzzy
 msgid "New Word Location"
-msgstr "Nuova Amicizia"
+msgstr "Új forrás"
 
 #: Template/WordLocations/deleteurl.ctp:25
 msgid "Delete Location"
-msgstr "Elimina localizzazione"
+msgstr "Település törlése"
 
 #: Template/WordLocations/deleteurl.ctp:28
 msgid "There are in total {0} locations for words with url {1}"
-msgstr ""
+msgstr "Összesen {0} szó szerepel ezalatt az url alatt: {}"
 
 #: Template/WordLocations/deleteurl.ctp:29
 msgid "Insert the word 'go' here to remove url and associated words "
-msgstr ""
+msgstr "Biztos vagy benne? Írd ide azt, hogy go a törléshez"
 
 #: Template/WordLocations/edit.ctp:28 Template/WordLocations/view.ctp:14
-#, fuzzy
 msgid "Edit Word Location"
-msgstr "Modifica parola"
+msgstr "Forrás szerkesztése"
 
 #: Template/WordLocations/index.ctp:20
-#, fuzzy
 msgid "Word Locations"
-msgstr "Cancella URL"
+msgstr "Források"
 
 #: Template/WordLocations/view.ctp:15
-#, fuzzy
 msgid "Delete Word Location"
-msgstr "Elimina localizzazione"
+msgstr "Forrás törlése"
 
 #: Template/WordLocations/view.ctp:30 Template/Words/view.ctp:47
 msgid "Url"
-msgstr "Url"
+msgstr "URL"
 
 #: Template/WordLocations/view.ctp:38 Template/Words/view.ctp:48
 msgid "Count"
-msgstr "Conteggio"
+msgstr "Számláló"
 
 #: Template/Words/add.ctp:24
 msgid "Add Word"
-msgstr "Aggiungi parola"
+msgstr "Szó felvétele"
 
 #: Template/Words/edit.ctp:30 Template/Words/view.ctp:14
 msgid "Edit Word"
-msgstr "Modifica parola"
+msgstr "Szó szerkesztése"
 
 #: Template/Words/friends.ctp:34
 msgid "Options"
-msgstr "Opzioni"
+msgstr "Lehetőségek"
 
 #: Template/Words/friends.ctp:43
 msgid "Sources:"
-msgstr "Fonti:"
+msgstr "Források:"
 
 #: Template/Words/friends.ctp:46
 msgid "Hide"
-msgstr "Nascondi"
+msgstr "Elrejtés"
 
 #: Template/Words/friends.ctp:47
 msgid "Add Connection"
-msgstr "Aggiungi connessione"
+msgstr "Új csatlakozás"
 
 #: Template/Words/index.ctp:22
 msgid "Words"
-msgstr "Parole"
+msgstr "Szavak"
 
 #: Template/Words/view.ctp:15
 msgid "Delete Word"
-msgstr "Elimina parola"
+msgstr "Szó törlése"
 
 #: Template/Words/view.ctp:32
 msgid "Language"
-msgstr "Lingua"
+msgstr "Nyelv"
 
 #: Template/Words/view.ctp:41
-#, fuzzy
 msgid "Related Word Locations"
-msgstr "Cancella URL"
+msgstr "Kapcsolódó dokumentumok"
 
 #: Template/Words/view.ctp:46
-#, fuzzy
 msgid "Word Id"
-msgstr "Parola"
+msgstr "Szó ID"
