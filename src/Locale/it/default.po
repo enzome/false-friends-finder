@@ -1,0 +1,534 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: False Friends Finder\n"
+"POT-Creation-Date: 2018-04-13 23:44+0200\n"
+"PO-Revision-Date: 2018-04-13 23:45+0200\n"
+"Last-Translator: Enzo Angiulli <mynameisenzo@gmail.com>\n"
+"Language-Team: Enzo Team\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.5\n"
+"X-Poedit-Basepath: ../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: Controller/ClassificationsController.php:55
+#: Controller/ClassificationsController.php:79
+msgid "The classification has been saved."
+msgstr ""
+
+#: Controller/ClassificationsController.php:59
+#: Controller/ClassificationsController.php:83
+msgid "The classification could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/ClassificationsController.php:100
+msgid "The classification has been deleted."
+msgstr ""
+
+#: Controller/ClassificationsController.php:102
+msgid "The classification could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/LanguagesController.php:55 Controller/LanguagesController.php:79
+msgid "The language has been saved."
+msgstr ""
+
+#: Controller/LanguagesController.php:59 Controller/LanguagesController.php:83
+msgid "The language could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/LanguagesController.php:100
+msgid "The language has been deleted."
+msgstr ""
+
+#: Controller/LanguagesController.php:102
+msgid "The language could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/WordConnectionsController.php:73
+#: Controller/WordConnectionsController.php:100
+msgid "The word connection has been saved."
+msgstr ""
+
+#: Controller/WordConnectionsController.php:77
+#: Controller/WordConnectionsController.php:104
+msgid "The word connection could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/WordConnectionsController.php:124
+msgid "The word connection has been deleted."
+msgstr ""
+
+#: Controller/WordConnectionsController.php:126
+msgid "The word connection could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/WordLocationsController.php:76
+#, php-format
+msgid "Deleted %s locations and %s words"
+msgstr ""
+
+#: Controller/WordLocationsController.php:91
+#: Controller/WordLocationsController.php:116
+msgid "The word location has been saved."
+msgstr ""
+
+#: Controller/WordLocationsController.php:95
+#: Controller/WordLocationsController.php:120
+msgid "The word location could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/WordLocationsController.php:138
+msgid "The word location has been deleted."
+msgstr ""
+
+#: Controller/WordLocationsController.php:140
+msgid "The word location could not be deleted. Please, try again."
+msgstr ""
+
+#: Controller/WordsController.php:57
+msgid "Currently that language is not supported ;)"
+msgstr ""
+
+#: Controller/WordsController.php:95 Controller/WordsController.php:172
+msgid "The word has been saved."
+msgstr ""
+
+#: Controller/WordsController.php:99 Controller/WordsController.php:176
+msgid "The word could not be saved. Please, try again."
+msgstr ""
+
+#: Controller/WordsController.php:194
+msgid "The word has been deleted."
+msgstr ""
+
+#: Controller/WordsController.php:196
+msgid "The word could not be deleted. Please, try again."
+msgstr ""
+
+#: Template/Classifications/add.ctp:9 Template/Classifications/edit.ctp:9
+#: Template/Classifications/index.ctp:9 Template/Classifications/index.ctp:26
+#: Template/Classifications/view.ctp:9 Template/Classifications/view.ctp:44
+#: Template/Languages/add.ctp:9 Template/Languages/edit.ctp:9
+#: Template/Languages/index.ctp:9 Template/Languages/index.ctp:26
+#: Template/Languages/view.ctp:9 Template/Languages/view.ctp:42
+#: Template/WordConnections/add.ctp:9 Template/WordConnections/edit.ctp:9
+#: Template/WordConnections/index.ctp:9 Template/WordConnections/index.ctp:31
+#: Template/WordConnections/view.ctp:9 Template/WordLocations/add.ctp:9
+#: Template/WordLocations/deleteurl.ctp:9 Template/WordLocations/edit.ctp:9
+#: Template/WordLocations/index.ctp:9 Template/WordLocations/index.ctp:28
+#: Template/WordLocations/view.ctp:9 Template/Words/add.ctp:9
+#: Template/Words/edit.ctp:9 Template/Words/friends.ctp:13
+#: Template/Words/index.ctp:9 Template/Words/index.ctp:29
+#: Template/Words/view.ctp:9 Template/Words/view.ctp:49
+msgid "Actions"
+msgstr ""
+
+#: Template/Classifications/add.ctp:10 Template/Classifications/edit.ctp:10
+#: Template/Classifications/index.ctp:10 Template/Classifications/view.ctp:10
+#: Template/Languages/add.ctp:10 Template/Languages/edit.ctp:10
+#: Template/Languages/index.ctp:10 Template/Languages/view.ctp:10
+#: Template/WordConnections/add.ctp:10 Template/WordConnections/edit.ctp:10
+#: Template/WordConnections/index.ctp:10 Template/WordConnections/view.ctp:10
+#: Template/WordLocations/add.ctp:10 Template/WordLocations/deleteurl.ctp:10
+#: Template/WordLocations/edit.ctp:10 Template/WordLocations/index.ctp:10
+#: Template/WordLocations/view.ctp:10 Template/Words/add.ctp:10
+#: Template/Words/edit.ctp:10 Template/Words/friends.ctp:14
+#: Template/Words/friends.ctp:26 Template/Words/index.ctp:10
+#: Template/Words/view.ctp:10
+msgid "Friends"
+msgstr "Amici"
+
+#: Template/Classifications/add.ctp:11 Template/Classifications/edit.ctp:11
+#: Template/Classifications/index.ctp:11 Template/Classifications/view.ctp:11
+#: Template/Languages/add.ctp:11 Template/Languages/edit.ctp:11
+#: Template/Languages/index.ctp:11 Template/Languages/view.ctp:11
+#: Template/WordConnections/add.ctp:11 Template/WordConnections/edit.ctp:11
+#: Template/WordConnections/index.ctp:11 Template/WordConnections/view.ctp:11
+#: Template/WordLocations/add.ctp:11 Template/WordLocations/deleteurl.ctp:11
+#: Template/WordLocations/edit.ctp:11 Template/WordLocations/index.ctp:11
+#: Template/WordLocations/view.ctp:11 Template/Words/add.ctp:11
+#: Template/Words/edit.ctp:11 Template/Words/friends.ctp:15
+#: Template/Words/index.ctp:11 Template/Words/view.ctp:11
+msgid "Connections"
+msgstr ""
+
+#: Template/Classifications/add.ctp:12 Template/Classifications/edit.ctp:12
+#: Template/Classifications/index.ctp:12 Template/Classifications/view.ctp:12
+#: Template/Languages/add.ctp:12 Template/Languages/edit.ctp:12
+#: Template/Languages/index.ctp:12 Template/Languages/view.ctp:12
+#: Template/WordConnections/add.ctp:12 Template/WordConnections/edit.ctp:12
+#: Template/WordConnections/index.ctp:12 Template/WordConnections/view.ctp:12
+#: Template/WordLocations/add.ctp:12 Template/WordLocations/deleteurl.ctp:12
+#: Template/WordLocations/edit.ctp:12 Template/WordLocations/index.ctp:12
+#: Template/WordLocations/view.ctp:12 Template/Words/add.ctp:12
+#: Template/Words/edit.ctp:12 Template/Words/friends.ctp:16
+#: Template/Words/index.ctp:12 Template/Words/view.ctp:12
+msgid "Delete Locations"
+msgstr ""
+
+#: Template/Classifications/add.ctp:14 Template/Classifications/edit.ctp:20
+#: Template/Classifications/view.ctp:16 Template/WordConnections/add.ctp:17
+#: Template/WordConnections/edit.ctp:23 Template/WordConnections/index.ctp:17
+#: Template/WordConnections/view.ctp:22
+msgid "List Classifications"
+msgstr ""
+
+#: Template/Classifications/add.ctp:15 Template/Classifications/edit.ctp:21
+#: Template/Classifications/index.ctp:15 Template/Classifications/view.ctp:18
+#: Template/WordConnections/add.ctp:14 Template/WordConnections/edit.ctp:20
+#: Template/WordConnections/view.ctp:16
+msgid "List Word Connections"
+msgstr ""
+
+#: Template/Classifications/add.ctp:16 Template/Classifications/edit.ctp:22
+#: Template/Classifications/index.ctp:16 Template/Classifications/view.ctp:19
+#: Template/WordConnections/index.ctp:14 Template/WordConnections/view.ctp:17
+msgid "New Word Connection"
+msgstr ""
+
+#: Template/Classifications/add.ctp:22
+msgid "Add Classification"
+msgstr ""
+
+#: Template/Classifications/add.ctp:27 Template/Classifications/edit.ctp:33
+#: Template/Languages/add.ctp:27 Template/Languages/edit.ctp:33
+#: Template/WordConnections/add.ctp:32 Template/WordConnections/edit.ctp:38
+#: Template/WordLocations/add.ctp:29 Template/WordLocations/deleteurl.ctp:32
+#: Template/WordLocations/edit.ctp:35 Template/Words/add.ctp:30
+#: Template/Words/edit.ctp:36
+msgid "Submit"
+msgstr ""
+
+#: Template/Classifications/edit.ctp:15 Template/Classifications/index.ctp:37
+#: Template/Classifications/view.ctp:56 Template/Languages/edit.ctp:15
+#: Template/Languages/index.ctp:37 Template/Languages/view.ctp:52
+#: Template/WordConnections/edit.ctp:15 Template/WordConnections/index.ctp:45
+#: Template/WordLocations/edit.ctp:15 Template/WordLocations/index.ctp:41
+#: Template/Words/edit.ctp:15 Template/Words/friends.ctp:45
+#: Template/Words/index.ctp:41 Template/Words/view.ctp:60
+msgid "Delete"
+msgstr ""
+
+#: Template/Classifications/edit.ctp:17 Template/Classifications/index.ctp:37
+#: Template/Classifications/view.ctp:15 Template/Classifications/view.ctp:56
+#: Template/Languages/edit.ctp:17 Template/Languages/index.ctp:37
+#: Template/Languages/view.ctp:15 Template/Languages/view.ctp:52
+#: Template/WordConnections/edit.ctp:17 Template/WordConnections/index.ctp:45
+#: Template/WordConnections/view.ctp:15 Template/WordLocations/edit.ctp:17
+#: Template/WordLocations/index.ctp:41 Template/WordLocations/view.ctp:15
+#: Template/Words/edit.ctp:17 Template/Words/index.ctp:41
+#: Template/Words/view.ctp:15 Template/Words/view.ctp:60
+msgid "Are you sure you want to delete # {0}?"
+msgstr ""
+
+#: Template/Classifications/edit.ctp:28 Template/Classifications/view.ctp:14
+msgid "Edit Classification"
+msgstr ""
+
+#: Template/Classifications/index.ctp:14 Template/Classifications/view.ctp:17
+#: Template/WordConnections/add.ctp:18 Template/WordConnections/edit.ctp:24
+#: Template/WordConnections/index.ctp:18 Template/WordConnections/view.ctp:23
+msgid "New Classification"
+msgstr ""
+
+#: Template/Classifications/index.ctp:20
+msgid "Classifications"
+msgstr ""
+
+#: Template/Classifications/index.ctp:35 Template/Classifications/view.ctp:54
+#: Template/Languages/index.ctp:35 Template/Languages/view.ctp:50
+#: Template/WordConnections/index.ctp:43 Template/WordLocations/index.ctp:39
+#: Template/Words/index.ctp:39 Template/Words/view.ctp:58
+msgid "View"
+msgstr ""
+
+#: Template/Classifications/index.ctp:36 Template/Classifications/view.ctp:55
+#: Template/Languages/index.ctp:36 Template/Languages/view.ctp:51
+#: Template/WordConnections/index.ctp:44 Template/WordLocations/index.ctp:40
+#: Template/Words/index.ctp:40 Template/Words/view.ctp:59
+msgid "Edit"
+msgstr ""
+
+#: Template/Classifications/index.ctp:45 Template/Languages/index.ctp:45
+#: Template/WordConnections/index.ctp:53 Template/WordLocations/index.ctp:49
+#: Template/Words/index.ctp:49
+msgid "first"
+msgstr ""
+
+#: Template/Classifications/index.ctp:46 Template/Languages/index.ctp:46
+#: Template/WordConnections/index.ctp:54 Template/WordLocations/index.ctp:50
+#: Template/Words/index.ctp:50
+msgid "previous"
+msgstr ""
+
+#: Template/Classifications/index.ctp:48 Template/Languages/index.ctp:48
+#: Template/WordConnections/index.ctp:56 Template/WordLocations/index.ctp:52
+#: Template/Words/index.ctp:52
+msgid "next"
+msgstr ""
+
+#: Template/Classifications/index.ctp:49 Template/Languages/index.ctp:49
+#: Template/WordConnections/index.ctp:57 Template/WordLocations/index.ctp:53
+#: Template/Words/index.ctp:53
+msgid "last"
+msgstr ""
+
+#: Template/Classifications/index.ctp:51 Template/Languages/index.ctp:51
+#: Template/WordConnections/index.ctp:59 Template/WordLocations/index.ctp:55
+#: Template/Words/index.ctp:55
+msgid ""
+"Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} "
+"total"
+msgstr ""
+
+#: Template/Classifications/view.ctp:15
+msgid "Delete Classification"
+msgstr ""
+
+#: Template/Classifications/view.ctp:26 Template/Languages/view.ctp:26
+msgid "Name"
+msgstr ""
+
+#: Template/Classifications/view.ctp:30 Template/Classifications/view.ctp:39
+#: Template/Languages/view.ctp:30 Template/Languages/view.ctp:39
+#: Template/WordConnections/view.ctp:46 Template/WordLocations/view.ctp:34
+#: Template/Words/view.ctp:36 Template/Words/view.ctp:45
+msgid "Id"
+msgstr ""
+
+#: Template/Classifications/view.ctp:35
+msgid "Related Word Connections"
+msgstr ""
+
+#: Template/Classifications/view.ctp:40
+msgid "From Id"
+msgstr ""
+
+#: Template/Classifications/view.ctp:41
+msgid "To Id"
+msgstr ""
+
+#: Template/Classifications/view.ctp:42
+msgid "Classification Id"
+msgstr ""
+
+#: Template/Classifications/view.ctp:43 Template/WordConnections/view.ctp:42
+msgid "Description"
+msgstr ""
+
+#: Template/Languages/add.ctp:14 Template/Languages/edit.ctp:20
+#: Template/Languages/view.ctp:16 Template/WordLocations/deleteurl.ctp:15
+#: Template/Words/add.ctp:15 Template/Words/edit.ctp:21
+#: Template/Words/friends.ctp:19 Template/Words/index.ctp:15
+#: Template/Words/view.ctp:18
+msgid "List Languages"
+msgstr ""
+
+#: Template/Languages/add.ctp:15 Template/Languages/edit.ctp:21
+#: Template/Languages/index.ctp:15 Template/Languages/view.ctp:18
+#: Template/WordLocations/add.ctp:15 Template/WordLocations/deleteurl.ctp:14
+#: Template/WordLocations/edit.ctp:21 Template/WordLocations/index.ctp:15
+#: Template/WordLocations/view.ctp:18 Template/Words/add.ctp:14
+#: Template/Words/edit.ctp:20 Template/Words/view.ctp:16
+msgid "List Words"
+msgstr ""
+
+#: Template/Languages/add.ctp:16 Template/Languages/edit.ctp:22
+#: Template/Languages/index.ctp:16 Template/Languages/view.ctp:19
+#: Template/WordLocations/add.ctp:16 Template/WordLocations/edit.ctp:22
+#: Template/WordLocations/index.ctp:16 Template/WordLocations/view.ctp:19
+#: Template/Words/friends.ctp:18 Template/Words/index.ctp:14
+#: Template/Words/view.ctp:17
+msgid "New Word"
+msgstr ""
+
+#: Template/Languages/add.ctp:22
+msgid "Add Language"
+msgstr ""
+
+#: Template/Languages/edit.ctp:28 Template/Languages/view.ctp:14
+msgid "Edit Language"
+msgstr ""
+
+#: Template/Languages/index.ctp:14 Template/Languages/view.ctp:17
+#: Template/WordLocations/deleteurl.ctp:16 Template/Words/add.ctp:16
+#: Template/Words/edit.ctp:22 Template/Words/friends.ctp:20
+#: Template/Words/index.ctp:16 Template/Words/view.ctp:19
+msgid "New Language"
+msgstr ""
+
+#: Template/Languages/index.ctp:20
+msgid "Languages"
+msgstr ""
+
+#: Template/Languages/view.ctp:15
+msgid "Delete Language"
+msgstr ""
+
+#: Template/Languages/view.ctp:35
+msgid "Related Words"
+msgstr ""
+
+#: Template/Languages/view.ctp:40 Template/WordLocations/view.ctp:26
+#: Template/Words/friends.ctp:30 Template/Words/view.ctp:28
+msgid "Word"
+msgstr ""
+
+#: Template/Languages/view.ctp:41
+msgid "Language Id"
+msgstr ""
+
+#: Template/Layout/error.ctp:35
+msgid "Error"
+msgstr ""
+
+#: Template/Layout/error.ctp:43
+msgid "Back"
+msgstr ""
+
+#: Template/WordConnections/add.ctp:15 Template/WordConnections/edit.ctp:21
+#: Template/WordConnections/index.ctp:15 Template/WordConnections/view.ctp:18
+msgid "List From Words"
+msgstr ""
+
+#: Template/WordConnections/add.ctp:16 Template/WordConnections/edit.ctp:22
+#: Template/WordConnections/index.ctp:16 Template/WordConnections/view.ctp:19
+msgid "New From Word"
+msgstr ""
+
+#: Template/WordConnections/add.ctp:24
+msgid "Add Word Connection"
+msgstr ""
+
+#: Template/WordConnections/edit.ctp:30 Template/WordConnections/view.ctp:14
+msgid "Edit Word Connection"
+msgstr ""
+
+#: Template/WordConnections/index.ctp:22
+msgid "Word Connections"
+msgstr ""
+
+#: Template/WordConnections/view.ctp:15
+msgid "Delete Word Connection"
+msgstr ""
+
+#: Template/WordConnections/view.ctp:20
+msgid "List To Words"
+msgstr ""
+
+#: Template/WordConnections/view.ctp:21
+msgid "New To Word"
+msgstr ""
+
+#: Template/WordConnections/view.ctp:30
+msgid "From Word"
+msgstr ""
+
+#: Template/WordConnections/view.ctp:34
+msgid "To Word"
+msgstr ""
+
+#: Template/WordConnections/view.ctp:38
+msgid "Classification"
+msgstr ""
+
+#: Template/WordLocations/add.ctp:14 Template/WordLocations/deleteurl.ctp:17
+#: Template/WordLocations/deleteurl.ctp:18 Template/WordLocations/edit.ctp:20
+#: Template/WordLocations/view.ctp:16 Template/Words/add.ctp:17
+#: Template/Words/edit.ctp:23 Template/Words/friends.ctp:21
+#: Template/Words/index.ctp:17 Template/Words/view.ctp:20
+msgid "List Word Locations"
+msgstr ""
+
+#: Template/WordLocations/add.ctp:22
+msgid "Add Word Location"
+msgstr ""
+
+#: Template/WordLocations/deleteurl.ctp:19 Template/WordLocations/index.ctp:14
+#: Template/WordLocations/view.ctp:17 Template/Words/add.ctp:18
+#: Template/Words/edit.ctp:24 Template/Words/friends.ctp:22
+#: Template/Words/index.ctp:18 Template/Words/view.ctp:21
+msgid "New Word Location"
+msgstr ""
+
+#: Template/WordLocations/deleteurl.ctp:25
+msgid "Delete Location"
+msgstr ""
+
+#: Template/WordLocations/deleteurl.ctp:28
+msgid "There are in total {0} locations for words with url {1}"
+msgstr ""
+
+#: Template/WordLocations/deleteurl.ctp:29
+msgid "Insert the word 'go' here to remove url and associated words "
+msgstr ""
+
+#: Template/WordLocations/edit.ctp:28 Template/WordLocations/view.ctp:14
+msgid "Edit Word Location"
+msgstr ""
+
+#: Template/WordLocations/index.ctp:20
+msgid "Word Locations"
+msgstr ""
+
+#: Template/WordLocations/view.ctp:15
+msgid "Delete Word Location"
+msgstr ""
+
+#: Template/WordLocations/view.ctp:30 Template/Words/view.ctp:47
+msgid "Url"
+msgstr ""
+
+#: Template/WordLocations/view.ctp:38 Template/Words/view.ctp:48
+msgid "Count"
+msgstr ""
+
+#: Template/Words/add.ctp:24
+msgid "Add Word"
+msgstr ""
+
+#: Template/Words/edit.ctp:30 Template/Words/view.ctp:14
+msgid "Edit Word"
+msgstr ""
+
+#: Template/Words/friends.ctp:34
+msgid "Options"
+msgstr ""
+
+#: Template/Words/friends.ctp:43
+msgid "Sources:"
+msgstr ""
+
+#: Template/Words/friends.ctp:46
+msgid "Hide"
+msgstr ""
+
+#: Template/Words/friends.ctp:47
+msgid "Add Connection"
+msgstr ""
+
+#: Template/Words/index.ctp:22
+msgid "Words"
+msgstr ""
+
+#: Template/Words/view.ctp:15
+msgid "Delete Word"
+msgstr ""
+
+#: Template/Words/view.ctp:32
+msgid "Language"
+msgstr ""
+
+#: Template/Words/view.ctp:41
+msgid "Related Word Locations"
+msgstr ""
+
+#: Template/Words/view.ctp:46
+msgid "Word Id"
+msgstr ""

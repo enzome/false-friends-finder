@@ -12,10 +12,7 @@ use App\Controller\AppController;
  */
 class WordsController extends AppController
 {
-      public function beforeFilter(\Cake\Event\Event $event) {
-        parent::beforeFilter($event);
-        $this->Crud->addListener('Crud.Api');
-      }
+
     /**
      * Index method
      *
@@ -51,12 +48,23 @@ class WordsController extends AppController
         $this->set('word', $word);
     }
 
+    public function setlang($lang) {
+        if (in_array($lang, ['en', 'it', 'hu'])) {
+            $this->request->session()->write('Language', $lang);
+            $this->redirect($this->referer());
+
+        } else {
+            $this->Flash->error(__('Currently that language is not supported ;)'));
+            $this->redirect($this->referer());
+        }
+    }
+
     public function friends () {
 
         $words = $this->Words->findFriends();
-
+        $wordscount = $words->count();
         $languages = $this->Words->Languages->find();
-        $this->set(compact ('words', 'languages', 'flagged'));
+        $this->set(compact ('words', 'languages', 'flagged', 'wordscount'));
     }
 
     public function flagged () {

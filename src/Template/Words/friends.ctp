@@ -23,7 +23,7 @@ $this->end();
     </ul>
 </nav>
 <div class="words index large-9 medium-8 columns content">
-    <h3><?= __('Friends') ?></h3>
+    <h3><?= __('Friends') .  ' (' . $wordscount .  ')' ?></h3>
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>

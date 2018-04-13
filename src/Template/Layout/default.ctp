@@ -42,7 +42,9 @@ $cakeDescription = 'False Friend Finder';
         </ul>
         <div class="top-bar-section">
             <ul class="right">
-
+                <li><?= $this->Html->link('EN', ['controller' => 'words', 'action' => 'setlang', 'en']) ?></li>
+                <li><?= $this->Html->link('IT', ['controller' => 'words', 'action' => 'setlang', 'it']) ?></li>
+                <li><?= $this->Html->link('HU', ['controller' => 'words', 'action' => 'setlang', 'hu']) ?></li>
             </ul>
         </div>
     </nav>
