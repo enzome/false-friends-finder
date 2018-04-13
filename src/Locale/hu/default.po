@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2018-04-14 00:12+0200\n"
-"PO-Revision-Date: 2018-04-14 00:27+0200\n"
+"PO-Revision-Date: 2018-04-14 00:44+0200\n"
 "Last-Translator: Enzo Angiulli <mynameisenzo@gmail.com>\n"
 "Language-Team: \n"
 "Language: hu\n"
@@ -512,7 +512,7 @@ msgstr "Elrejtés"
 
 #: Template/Words/friends.ctp:47
 msgid "Add Connection"
-msgstr "Összekapcsolás elmentése"
+msgstr "Hamis Barát!"
 
 #: Template/Words/index.ctp:22
 msgid "Words"
