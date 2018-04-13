@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: False Friends Finder\n"
-"POT-Creation-Date: 2018-04-13 23:44+0200\n"
-"PO-Revision-Date: 2018-04-14 00:07+0200\n"
+"POT-Creation-Date: 2018-04-14 01:15+0200\n"
+"PO-Revision-Date: 2018-04-14 01:28+0200\n"
 "Last-Translator: Enzo Angiulli <mynameisenzo@gmail.com>\n"
 "Language-Team: Enzo Team\n"
 "Language: it\n"
@@ -24,7 +24,7 @@ msgstr "La classificazione é stata salvata."
 #: Controller/ClassificationsController.php:59
 #: Controller/ClassificationsController.php:83
 msgid "The classification could not be saved. Please, try again."
-msgstr "L’etichetta non è stata salvata. Prova di nuovo."
+msgstr "La lingua non è stata salvata. Prova di nuovo."
 
 #: Controller/ClassificationsController.php:100
 msgid "The classification has been deleted."
@@ -32,96 +32,108 @@ msgstr "La classificazione é stata eliminata."
 
 #: Controller/ClassificationsController.php:102
 msgid "The classification could not be deleted. Please, try again."
-msgstr "L’etichetta non è stata salvata. Prova di nuovo."
+msgstr "La lingua non è stata salvata. Prova di nuovo."
 
 #: Controller/LanguagesController.php:55 Controller/LanguagesController.php:79
 msgid "The language has been saved."
 msgstr "La lingua è stata salvata."
 
 #: Controller/LanguagesController.php:59 Controller/LanguagesController.php:83
-#, fuzzy
 msgid "The language could not be saved. Please, try again."
-msgstr "L’etichetta non è stata salvata. Prova di nuovo."
+msgstr "La lingua non è stata salvata. Prova di nuovo."
 
 #: Controller/LanguagesController.php:100
-#, fuzzy
 msgid "The language has been deleted."
-msgstr "La lingua è stata salvata."
+msgstr "Lingua eliminata con successo."
 
 #: Controller/LanguagesController.php:102
-#, fuzzy
 msgid "The language could not be deleted. Please, try again."
-msgstr "L’etichetta non è stata salvata. Prova di nuovo."
+msgstr "La lingua non è stata salvata. Prova di nuovo."
+
+#: Controller/LinkSuggestionsController.php:55
+msgid ""
+"Thank you for your suggestion. The starting link has been added. Stay "
+"tuned..."
+msgstr "Grazie per il tuo suggerimento."
+
+#: Controller/LinkSuggestionsController.php:59
+#: Controller/LinkSuggestionsController.php:83
+msgid "The link suggestion could not be saved. Please, try again."
+msgstr "Il suggerimento non è stato salvato. Prova di nuovo."
+
+#: Controller/LinkSuggestionsController.php:79
+msgid "The link suggestion has been saved."
+msgstr "Il suggerimento è stato salvato. "
+
+#: Controller/LinkSuggestionsController.php:100
+msgid "The link suggestion has been deleted."
+msgstr "Il suggerimento è stato salvato. "
+
+#: Controller/LinkSuggestionsController.php:102
+msgid "The link suggestion could not be deleted. Please, try again."
+msgstr "Il suggerimento non è stato salvato. Prova di nuovo."
 
 #: Controller/WordConnectionsController.php:73
 #: Controller/WordConnectionsController.php:100
-#, fuzzy
 msgid "The word connection has been saved."
-msgstr "La classificazione é stata salvata."
+msgstr "Il collegamento di parola è stato salvato."
 
 #: Controller/WordConnectionsController.php:77
 #: Controller/WordConnectionsController.php:104
-#, fuzzy
 msgid "The word connection could not be saved. Please, try again."
-msgstr "L’etichetta non è stata salvata. Prova di nuovo."
+msgstr "Il collegamento non è stata salvato. Prova di nuovo."
 
 #: Controller/WordConnectionsController.php:124
 msgid "The word connection has been deleted."
-msgstr ""
+msgstr "La collegamento è stata eliminata."
 
 #: Controller/WordConnectionsController.php:126
 msgid "The word connection could not be deleted. Please, try again."
-msgstr ""
+msgstr "Il collegamento non è stata salvato. Prova di nuovo."
 
 #: Controller/WordLocationsController.php:76
 #, php-format
 msgid "Deleted %s locations and %s words"
-msgstr ""
+msgstr "Eliminato %s posizioni e %s parole"
 
 #: Controller/WordLocationsController.php:91
 #: Controller/WordLocationsController.php:116
-#, fuzzy
 msgid "The word location has been saved."
-msgstr "La classificazione é stata salvata."
+msgstr "La posizione della parola è stata salvata."
 
 #: Controller/WordLocationsController.php:95
 #: Controller/WordLocationsController.php:120
-#, fuzzy
 msgid "The word location could not be saved. Please, try again."
-msgstr "L’etichetta non è stata salvata. Prova di nuovo."
+msgstr ""
+"La posizione della parola non può essere salvata. Per favore, riprova."
 
 #: Controller/WordLocationsController.php:138
 msgid "The word location has been deleted."
-msgstr ""
+msgstr "Luogo cancellato con successo"
 
 #: Controller/WordLocationsController.php:140
 msgid "The word location could not be deleted. Please, try again."
-msgstr ""
+msgstr "La posizione di parola non può essere eliminata. Per favore, riprova."
 
 #: Controller/WordsController.php:57
-#, fuzzy
 msgid "Currently that language is not supported ;)"
-msgstr "Aggiungi lingua"
+msgstr "Attualmente tale lingua non è supportata ;)"
 
-#: Controller/WordsController.php:95 Controller/WordsController.php:172
-#, fuzzy
+#: Controller/WordsController.php:97 Controller/WordsController.php:175
 msgid "The word has been saved."
-msgstr "La lingua è stata salvata."
+msgstr "La parola è stata salvata"
 
-#: Controller/WordsController.php:99 Controller/WordsController.php:176
-#, fuzzy
+#: Controller/WordsController.php:101 Controller/WordsController.php:179
 msgid "The word could not be saved. Please, try again."
-msgstr "L’etichetta non è stata salvata. Prova di nuovo."
+msgstr "La parola non è stata salvata. Prova di nuovo."
 
-#: Controller/WordsController.php:194
-#, fuzzy
+#: Controller/WordsController.php:197
 msgid "The word has been deleted."
-msgstr "La lingua è stata salvata."
+msgstr "La parola è stata salvata."
 
-#: Controller/WordsController.php:196
-#, fuzzy
+#: Controller/WordsController.php:199
 msgid "The word could not be deleted. Please, try again."
-msgstr "L’etichetta non è stata salvata. Prova di nuovo."
+msgstr "La parola non è stata salvata. Prova di nuovo."
 
 #: Template/Classifications/add.ctp:9 Template/Classifications/edit.ctp:9
 #: Template/Classifications/index.ctp:9 Template/Classifications/index.ctp:26
@@ -129,15 +141,16 @@ msgstr "L’etichetta non è stata salvata. Prova di nuovo."
 #: Template/Languages/add.ctp:9 Template/Languages/edit.ctp:9
 #: Template/Languages/index.ctp:9 Template/Languages/index.ctp:26
 #: Template/Languages/view.ctp:9 Template/Languages/view.ctp:42
-#: Template/WordConnections/add.ctp:9 Template/WordConnections/edit.ctp:9
-#: Template/WordConnections/index.ctp:9 Template/WordConnections/index.ctp:31
-#: Template/WordConnections/view.ctp:9 Template/WordLocations/add.ctp:9
-#: Template/WordLocations/deleteurl.ctp:9 Template/WordLocations/edit.ctp:9
-#: Template/WordLocations/index.ctp:9 Template/WordLocations/index.ctp:28
-#: Template/WordLocations/view.ctp:9 Template/Words/add.ctp:9
-#: Template/Words/edit.ctp:9 Template/Words/friends.ctp:13
-#: Template/Words/index.ctp:9 Template/Words/index.ctp:29
-#: Template/Words/view.ctp:9 Template/Words/view.ctp:49
+#: Template/LinkSuggestions/add.ctp:9 Template/WordConnections/add.ctp:9
+#: Template/WordConnections/edit.ctp:9 Template/WordConnections/index.ctp:9
+#: Template/WordConnections/index.ctp:31 Template/WordConnections/view.ctp:9
+#: Template/WordLocations/add.ctp:9 Template/WordLocations/deleteurl.ctp:9
+#: Template/WordLocations/edit.ctp:9 Template/WordLocations/index.ctp:9
+#: Template/WordLocations/index.ctp:28 Template/WordLocations/view.ctp:9
+#: Template/Words/add.ctp:9 Template/Words/edit.ctp:9
+#: Template/Words/friends.ctp:13 Template/Words/index.ctp:9
+#: Template/Words/index.ctp:29 Template/Words/view.ctp:9
+#: Template/Words/view.ctp:49
 msgid "Actions"
 msgstr "Possibilitá"
 
@@ -210,10 +223,10 @@ msgstr "Aggiungi Classificazione"
 
 #: Template/Classifications/add.ctp:27 Template/Classifications/edit.ctp:33
 #: Template/Languages/add.ctp:27 Template/Languages/edit.ctp:33
-#: Template/WordConnections/add.ctp:32 Template/WordConnections/edit.ctp:38
-#: Template/WordLocations/add.ctp:29 Template/WordLocations/deleteurl.ctp:32
-#: Template/WordLocations/edit.ctp:35 Template/Words/add.ctp:30
-#: Template/Words/edit.ctp:36
+#: Template/LinkSuggestions/add.ctp:21 Template/WordConnections/add.ctp:32
+#: Template/WordConnections/edit.ctp:38 Template/WordLocations/add.ctp:29
+#: Template/WordLocations/deleteurl.ctp:32 Template/WordLocations/edit.ctp:35
+#: Template/Words/add.ctp:30 Template/Words/edit.ctp:36
 msgid "Submit"
 msgstr "Salva"
 
@@ -317,24 +330,20 @@ msgid "Id"
 msgstr "Id"
 
 #: Template/Classifications/view.ctp:35
-#, fuzzy
 msgid "Related Word Connections"
-msgstr "Elenco Connessioni"
+msgstr "Connessioni di parole correlate"
 
 #: Template/Classifications/view.ctp:40
-#, fuzzy
 msgid "From Id"
-msgstr "ID lingua"
+msgstr "Da Id"
 
 #: Template/Classifications/view.ctp:41
-#, fuzzy
 msgid "To Id"
-msgstr "ID lingua"
+msgstr "All'Id"
 
 #: Template/Classifications/view.ctp:42
-#, fuzzy
 msgid "Classification Id"
-msgstr "Aggiungi Classificazione"
+msgstr "Id classificazione"
 
 #: Template/Classifications/view.ctp:43 Template/WordConnections/view.ctp:42
 msgid "Description"
@@ -345,7 +354,6 @@ msgstr "Descrizione"
 #: Template/Words/add.ctp:15 Template/Words/edit.ctp:21
 #: Template/Words/friends.ctp:19 Template/Words/index.ctp:15
 #: Template/Words/view.ctp:18
-#, fuzzy
 msgid "List Languages"
 msgstr "Lingue"
 
@@ -355,9 +363,8 @@ msgstr "Lingue"
 #: Template/WordLocations/edit.ctp:21 Template/WordLocations/index.ctp:15
 #: Template/WordLocations/view.ctp:18 Template/Words/add.ctp:14
 #: Template/Words/edit.ctp:20 Template/Words/view.ctp:16
-#, fuzzy
 msgid "List Words"
-msgstr "Dizionario dei sinonimiName"
+msgstr "Elenco parole"
 
 #: Template/Languages/add.ctp:16 Template/Languages/edit.ctp:22
 #: Template/Languages/index.ctp:16 Template/Languages/view.ctp:19
@@ -373,9 +380,8 @@ msgid "Add Language"
 msgstr "Aggiungi lingua"
 
 #: Template/Languages/edit.ctp:28 Template/Languages/view.ctp:14
-#, fuzzy
 msgid "Edit Language"
-msgstr "Lingua"
+msgstr "Modifica Lingua"
 
 #: Template/Languages/index.ctp:14 Template/Languages/view.ctp:17
 #: Template/WordLocations/deleteurl.ctp:16 Template/Words/add.ctp:16
@@ -405,92 +411,90 @@ msgstr "Parola"
 msgid "Language Id"
 msgstr "ID lingua"
 
+#: Template/Layout/default.ctp:40
+msgid "False Friends Finder"
+msgstr ""
+
+#: Template/Layout/default.ctp:45
+msgid "Suggest a link to scrape"
+msgstr "Suggerisci un link!"
+
 #: Template/Layout/error.ctp:35
 msgid "Error"
 msgstr "Errore"
 
-#: Template/Layout/error.ctp:43
+#: Template/Layout/error.ctp:43 Template/LinkSuggestions/add.ctp:10
 msgid "Back"
 msgstr "Indietro"
 
+#: Template/LinkSuggestions/add.ctp:16
+msgid "Add Link Suggestion"
+msgstr "Aggiungere Link suggerimento"
+
 #: Template/WordConnections/add.ctp:15 Template/WordConnections/edit.ctp:21
 #: Template/WordConnections/index.ctp:15 Template/WordConnections/view.ctp:18
-#, fuzzy
 msgid "List From Words"
-msgstr "Dizionario dei sinonimiName"
+msgstr "Elenco dalle parole (Da)"
 
 #: Template/WordConnections/add.ctp:16 Template/WordConnections/edit.ctp:22
 #: Template/WordConnections/index.ctp:16 Template/WordConnections/view.ctp:19
-#, fuzzy
 msgid "New From Word"
-msgstr "Nuova Amicizia"
+msgstr "Nuova parola “Da”"
 
 #: Template/WordConnections/add.ctp:24
-#, fuzzy
 msgid "Add Word Connection"
 msgstr "Nuova Amicizia"
 
 #: Template/WordConnections/edit.ctp:30 Template/WordConnections/view.ctp:14
-#, fuzzy
 msgid "Edit Word Connection"
-msgstr "Nuova Amicizia"
+msgstr "Modifica collegamento"
 
 #: Template/WordConnections/index.ctp:22
-#, fuzzy
 msgid "Word Connections"
 msgstr "Elenco Connessioni"
 
 #: Template/WordConnections/view.ctp:15
-#, fuzzy
 msgid "Delete Word Connection"
-msgstr "Nuova Amicizia"
+msgstr "Elimina collegamento di parola"
 
 #: Template/WordConnections/view.ctp:20
-#, fuzzy
 msgid "List To Words"
-msgstr "Dizionario dei sinonimiName"
+msgstr "Elenco dalle parole (A)"
 
 #: Template/WordConnections/view.ctp:21
-#, fuzzy
 msgid "New To Word"
-msgstr "Nuova Amicizia"
+msgstr "Nuova parola “A”"
 
 #: Template/WordConnections/view.ctp:30
-#, fuzzy
 msgid "From Word"
-msgstr "Nuova parola"
+msgstr "Parola 1"
 
 #: Template/WordConnections/view.ctp:34
-#, fuzzy
 msgid "To Word"
-msgstr "Parola"
+msgstr "Parola 2"
 
 #: Template/WordConnections/view.ctp:38
-#, fuzzy
 msgid "Classification"
-msgstr "La classificazione é stata salvata."
+msgstr "Classificazione"
 
 #: Template/WordLocations/add.ctp:14 Template/WordLocations/deleteurl.ctp:17
 #: Template/WordLocations/deleteurl.ctp:18 Template/WordLocations/edit.ctp:20
 #: Template/WordLocations/view.ctp:16 Template/Words/add.ctp:17
 #: Template/Words/edit.ctp:23 Template/Words/friends.ctp:21
 #: Template/Words/index.ctp:17 Template/Words/view.ctp:20
-#, fuzzy
 msgid "List Word Locations"
-msgstr "Elenco Connessioni"
+msgstr "Elenco Delle risorse"
 
 #: Template/WordLocations/add.ctp:22
-#, fuzzy
 msgid "Add Word Location"
-msgstr "Aggiungi parola"
+msgstr "Aggiungi risorsa di parole"
 
 #: Template/WordLocations/deleteurl.ctp:19 Template/WordLocations/index.ctp:14
 #: Template/WordLocations/view.ctp:17 Template/Words/add.ctp:18
 #: Template/Words/edit.ctp:24 Template/Words/friends.ctp:22
 #: Template/Words/index.ctp:18 Template/Words/view.ctp:21
-#, fuzzy
 msgid "New Word Location"
-msgstr "Nuova Amicizia"
+msgstr "Nuova riferenza"
 
 #: Template/WordLocations/deleteurl.ctp:25
 msgid "Delete Location"
@@ -498,26 +502,23 @@ msgstr "Elimina localizzazione"
 
 #: Template/WordLocations/deleteurl.ctp:28
 msgid "There are in total {0} locations for words with url {1}"
-msgstr ""
+msgstr "Ci sono in totale {0} posizioni per le parole con url {1}"
 
 #: Template/WordLocations/deleteurl.ctp:29
 msgid "Insert the word 'go' here to remove url and associated words "
-msgstr ""
+msgstr "Inserire la parola ‘go’ qui per rimuovere url e parole associate"
 
 #: Template/WordLocations/edit.ctp:28 Template/WordLocations/view.ctp:14
-#, fuzzy
 msgid "Edit Word Location"
-msgstr "Modifica parola"
+msgstr "Modifica la referenza della parola"
 
 #: Template/WordLocations/index.ctp:20
-#, fuzzy
 msgid "Word Locations"
-msgstr "Cancella URL"
+msgstr "Riferenze"
 
 #: Template/WordLocations/view.ctp:15
-#, fuzzy
 msgid "Delete Word Location"
-msgstr "Elimina localizzazione"
+msgstr "Elimina referenza della parola"
 
 #: Template/WordLocations/view.ctp:30 Template/Words/view.ctp:47
 msgid "Url"
@@ -548,8 +549,8 @@ msgid "Hide"
 msgstr "Nascondi"
 
 #: Template/Words/friends.ctp:47
-msgid "Add Connection"
-msgstr "Aggiungi connessione"
+msgid "False Friend!"
+msgstr "Falso amico!"
 
 #: Template/Words/index.ctp:22
 msgid "Words"
@@ -564,11 +565,9 @@ msgid "Language"
 msgstr "Lingua"
 
 #: Template/Words/view.ctp:41
-#, fuzzy
 msgid "Related Word Locations"
-msgstr "Cancella URL"
+msgstr "Riferenze"
 
 #: Template/Words/view.ctp:46
-#, fuzzy
 msgid "Word Id"
-msgstr "Parola"
+msgstr "Id"

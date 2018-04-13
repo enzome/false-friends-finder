@@ -41,6 +41,9 @@ $cakeDescription = 'False Friend Finder';
             </li>
         </ul>
         <div class="top-bar-section">
+            <ul class="left">
+                <li><?= $this->Html->link(__('Suggest a link to scrape'), ['controller' => 'link_suggestions', 'action' => 'add']) ?></li>
+            </ul>
             <ul class="right">
                 <li><?= $this->Html->link('EN', ['controller' => 'words', 'action' => 'setlang', 'en']) ?></li>
                 <li><?= $this->Html->link('IT', ['controller' => 'words', 'action' => 'setlang', 'it']) ?></li>

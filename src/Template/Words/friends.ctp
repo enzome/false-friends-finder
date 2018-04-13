@@ -44,7 +44,7 @@ $this->end();
                 <?php endforeach ?>
                 <td><?= $this->Html->link(__('Delete'), 'javascript:void(0);', ['onclick' => 'deleteWithPairs(this, '. $word['id'] . ')'] ) ?>&nbsp;&nbsp;&nbsp;| &nbsp;
                 <?= $this->Html->link(__('Hide'), 'javascript:void(0);', ['onclick' => 'hideWithPairs(this, '. $word['id'] . ')'] ) ?>&nbsp;&nbsp;&nbsp;| &nbsp;
-                <?= $this->Html->link(__('Add Connection'), 'javascript:void(0);', ['onclick' => 'addConnection(this, '. $word['id'] . ')'] ) ?></td>
+                <?= $this->Html->link(__('False Friend!'), 'javascript:void(0);', ['onclick' => 'addConnection(this, '. $word['id'] . ')'] ) ?></td>
             </tr>
             <?php endforeach; ?>
         </tbody>

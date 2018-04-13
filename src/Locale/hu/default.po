@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2018-04-14 00:12+0200\n"
-"PO-Revision-Date: 2018-04-14 00:44+0200\n"
+"POT-Creation-Date: 2018-04-14 01:13+0200\n"
+"PO-Revision-Date: 2018-04-14 01:15+0200\n"
 "Last-Translator: Enzo Angiulli <mynameisenzo@gmail.com>\n"
 "Language-Team: \n"
 "Language: hu\n"
@@ -49,6 +49,31 @@ msgstr "A nyelv törölve lett."
 msgid "The language could not be deleted. Please, try again."
 msgstr "A nyelv nem törölhető. Kérjük próbálja meg újra."
 
+#: Controller/LinkSuggestionsController.php:55
+msgid ""
+"Thank you for your suggestion. The starting link has been added. Stay "
+"tuned..."
+msgstr ""
+"Köszönöm a javaslatot. A kezdő link hozzáadásra került. Hamarosan kezdődik "
+"a keresés…"
+
+#: Controller/LinkSuggestionsController.php:59
+#: Controller/LinkSuggestionsController.php:83
+msgid "The link suggestion could not be saved. Please, try again."
+msgstr "A javaslatot nem lehetett elmenteni."
+
+#: Controller/LinkSuggestionsController.php:79
+msgid "The link suggestion has been saved."
+msgstr "A link elmentve."
+
+#: Controller/LinkSuggestionsController.php:100
+msgid "The link suggestion has been deleted."
+msgstr "A javaslat törölve."
+
+#: Controller/LinkSuggestionsController.php:102
+msgid "The link suggestion could not be deleted. Please, try again."
+msgstr "A link javaslat nem törölhető. Kérjük próbálja meg újra."
+
 #: Controller/WordConnectionsController.php:73
 #: Controller/WordConnectionsController.php:100
 msgid "The word connection has been saved."
@@ -94,19 +119,19 @@ msgstr "A linket nem lehetett törölni."
 msgid "Currently that language is not supported ;)"
 msgstr "Az általad kiválasztott nyelvet a rendszer nem támogatja"
 
-#: Controller/WordsController.php:95 Controller/WordsController.php:172
+#: Controller/WordsController.php:97 Controller/WordsController.php:175
 msgid "The word has been saved."
 msgstr "A szó mentésre került."
 
-#: Controller/WordsController.php:99 Controller/WordsController.php:176
+#: Controller/WordsController.php:101 Controller/WordsController.php:179
 msgid "The word could not be saved. Please, try again."
 msgstr "A szót nem lehetett elmenteni."
 
-#: Controller/WordsController.php:194
+#: Controller/WordsController.php:197
 msgid "The word has been deleted."
 msgstr "A szó törölve lett."
 
-#: Controller/WordsController.php:196
+#: Controller/WordsController.php:199
 msgid "The word could not be deleted. Please, try again."
 msgstr "A szót nem lehetett törölni."
 
@@ -116,15 +141,16 @@ msgstr "A szót nem lehetett törölni."
 #: Template/Languages/add.ctp:9 Template/Languages/edit.ctp:9
 #: Template/Languages/index.ctp:9 Template/Languages/index.ctp:26
 #: Template/Languages/view.ctp:9 Template/Languages/view.ctp:42
-#: Template/WordConnections/add.ctp:9 Template/WordConnections/edit.ctp:9
-#: Template/WordConnections/index.ctp:9 Template/WordConnections/index.ctp:31
-#: Template/WordConnections/view.ctp:9 Template/WordLocations/add.ctp:9
-#: Template/WordLocations/deleteurl.ctp:9 Template/WordLocations/edit.ctp:9
-#: Template/WordLocations/index.ctp:9 Template/WordLocations/index.ctp:28
-#: Template/WordLocations/view.ctp:9 Template/Words/add.ctp:9
-#: Template/Words/edit.ctp:9 Template/Words/friends.ctp:13
-#: Template/Words/index.ctp:9 Template/Words/index.ctp:29
-#: Template/Words/view.ctp:9 Template/Words/view.ctp:49
+#: Template/LinkSuggestions/add.ctp:9 Template/WordConnections/add.ctp:9
+#: Template/WordConnections/edit.ctp:9 Template/WordConnections/index.ctp:9
+#: Template/WordConnections/index.ctp:31 Template/WordConnections/view.ctp:9
+#: Template/WordLocations/add.ctp:9 Template/WordLocations/deleteurl.ctp:9
+#: Template/WordLocations/edit.ctp:9 Template/WordLocations/index.ctp:9
+#: Template/WordLocations/index.ctp:28 Template/WordLocations/view.ctp:9
+#: Template/Words/add.ctp:9 Template/Words/edit.ctp:9
+#: Template/Words/friends.ctp:13 Template/Words/index.ctp:9
+#: Template/Words/index.ctp:29 Template/Words/view.ctp:9
+#: Template/Words/view.ctp:49
 msgid "Actions"
 msgstr "Opciók"
 
@@ -197,10 +223,10 @@ msgstr "Besorolás hozzáadása"
 
 #: Template/Classifications/add.ctp:27 Template/Classifications/edit.ctp:33
 #: Template/Languages/add.ctp:27 Template/Languages/edit.ctp:33
-#: Template/WordConnections/add.ctp:32 Template/WordConnections/edit.ctp:38
-#: Template/WordLocations/add.ctp:29 Template/WordLocations/deleteurl.ctp:32
-#: Template/WordLocations/edit.ctp:35 Template/Words/add.ctp:30
-#: Template/Words/edit.ctp:36
+#: Template/LinkSuggestions/add.ctp:21 Template/WordConnections/add.ctp:32
+#: Template/WordConnections/edit.ctp:38 Template/WordLocations/add.ctp:29
+#: Template/WordLocations/deleteurl.ctp:32 Template/WordLocations/edit.ctp:35
+#: Template/Words/add.ctp:30 Template/Words/edit.ctp:36
 msgid "Submit"
 msgstr "Mentés"
 
@@ -385,13 +411,27 @@ msgstr "Szó"
 msgid "Language Id"
 msgstr "Nyelvi azonosító"
 
+#: Template/Layout/default.ctp:40
+msgid "False Friends Finder"
+msgstr ""
+
+#: Template/Layout/default.ctp:45
+msgid "Suggest a link to scrape"
+msgstr ""
+
 #: Template/Layout/error.ctp:35
 msgid "Error"
 msgstr "Hiba"
 
-#: Template/Layout/error.ctp:43
+#: Template/Layout/error.ctp:43 Template/LinkSuggestions/add.ctp:10
 msgid "Back"
 msgstr "Vissza"
+
+#: Template/LinkSuggestions/add.ctp:16
+#, fuzzy
+#| msgid "Add Connection"
+msgid "Add Link Suggestion"
+msgstr "Hamis Barát!"
 
 #: Template/WordConnections/add.ctp:15 Template/WordConnections/edit.ctp:21
 #: Template/WordConnections/index.ctp:15 Template/WordConnections/view.ctp:18
@@ -511,8 +551,10 @@ msgid "Hide"
 msgstr "Elrejtés"
 
 #: Template/Words/friends.ctp:47
-msgid "Add Connection"
-msgstr "Hamis Barát!"
+#, fuzzy
+#| msgid "Friends"
+msgid "False Friend!"
+msgstr "Barátok"
 
 #: Template/Words/index.ctp:22
 msgid "Words"
