@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2018-04-14 00:12+0200\n"
-"PO-Revision-Date: 2018-04-14 00:24+0200\n"
+"PO-Revision-Date: 2018-04-14 00:27+0200\n"
 "Last-Translator: Enzo Angiulli <mynameisenzo@gmail.com>\n"
 "Language-Team: \n"
 "Language: hu\n"
@@ -468,7 +468,7 @@ msgstr "Összesen {0} szó szerepel ezalatt az url alatt: {}"
 
 #: Template/WordLocations/deleteurl.ctp:29
 msgid "Insert the word 'go' here to remove url and associated words "
-msgstr "Biztos vagy benne? Írd ide azt, hogy go a törléshez"
+msgstr "Biztos vagy benne? Írd ide azt, hogy go a törléshez "
 
 #: Template/WordLocations/edit.ctp:28 Template/WordLocations/view.ctp:14
 msgid "Edit Word Location"
@@ -512,7 +512,7 @@ msgstr "Elrejtés"
 
 #: Template/Words/friends.ctp:47
 msgid "Add Connection"
-msgstr "Új csatlakozás"
+msgstr "Összekapcsolás elmentése"
 
 #: Template/Words/index.ctp:22
 msgid "Words"
