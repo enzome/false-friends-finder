@@ -95,7 +95,7 @@ $this->end();
                 $(me).parents('tr').css('background-color', '#c6ffc6');
                 var href = "<?= $this->Url->build(['controller' => 'word_connections', 'action' => 'edit']) ?>/" + data;
                 $(me).attr('href', href);
-                $(me).attr('_target', 'blank');
+                $(me).attr('target', '_blank');
                 $(me).text('<?= __('Explain!') ?>');
                 // $(me).parent('td').html('<a href="' + href +'" _target="blank"><?= __('Explain!') ?></a>');
             } else {$(me).parents('tr').css('background-color', 'red');         }
