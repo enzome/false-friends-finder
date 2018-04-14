@@ -48,7 +48,7 @@ $cakeDescription = 'False Friend Finder';
 
                 <li>
                     <?php
-                        echo $this->Form->create('name', ['url' => $this->Url->build(['controller' => 'words', 'action' => 'newplayer'])]) ;
+                        echo $this->Form->create('name', ['url' => ['controller'=>'words', 'action' => 'newplayer']]) ;
                         echo $this->Form->input('name', ['label' => false, 'placeholder' => __('Player name')]);
                         ?>
 
