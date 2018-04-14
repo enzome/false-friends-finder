@@ -38,13 +38,27 @@ $this->end();
             <?php foreach ($words as $word): ?>
             <tr style="<?php if ($word['flag']) echo 'background-color: #c6ffc6;' ; ?> <?php if ($word['hidden']) echo 'display: none;' ?>"  >
                 <td><?= $word['word'] ?></td>
-
-                <?php foreach ($languages as $language): ?>
-                    <td><?= $this->Html->link(__('Sources:'), 'javascript: void(0);', ['onclick' => 'listsources(this, '. '\'' .$word['word'] . '\'' .', '. $language['id'].')']) ?></td>
+                    <?php foreach ($languages as $language): ?>
+                <td><?= $this->Html->link(__('Sources:'), 'javascript: void(0);', ['onclick' => 'listsources(this, '. '\'' .$word['word'] . '\'' .', '. $language['id'].')']) ?></td>
                 <?php endforeach ?>
-                <td><?= $this->Html->link(__('Delete'), 'javascript:void(0);', ['onclick' => 'deleteWithPairs(this, '. $word['id'] . ')'] ) ?>&nbsp;&nbsp;&nbsp;| &nbsp;
-                <?= $this->Html->link(__('Hide'), 'javascript:void(0);', ['onclick' => 'hideWithPairs(this, '. $word['id'] . ')'] ) ?>&nbsp;&nbsp;&nbsp;| &nbsp;
-                <?= $this->Html->link(__('False Friend!'), 'javascript:void(0);', ['onclick' => 'addConnection(this, '. $word['id'] . ')'] ) ?></td>
+                <td>
+                    <?php if ($word['completed'] == true): ?>
+                        <?= $this->Html->link('&#10004;', ['controller' => 'word_connections', 'action' => 'view', $word['connection_id']], ['escape' => false]) ?>
+                    <?php else:  ?>
+                        <?php if ($this->request->session()->read('Name') === 'enzolino') echo $this->Html->link(__('Delete') . '&nbsp;&nbsp;&nbsp;| &nbsp;', 'javascript:void(0);', ['escape' => false, 'onclick' => 'deleteWithPairs(this, '. $word['id'] . ')'] ) ?>
+                <?= $this->Html->link(__('Hide'), 'javascript:void(0);', ['onclick' => 'hideWithPairs(this, '. $word['id'] . ')'] ) ?>
+                <?php if (!$word['flag']): ?>
+                                    &nbsp;&nbsp;&nbsp;| &nbsp;
+                <?= $this->Html->link(__('False Friend!'), 'javascript:void(0);', ['onclick' => 'addConnection(this, '. $word['id'] . ')'] ) ?>
+                <?php else : ?>
+
+                                    &nbsp;&nbsp;&nbsp;| &nbsp;
+                                    <?= $this->Html->link(__('Explain!'), ['controller' => 'word_connections', 'action' => 'edit', $word['connection_id']], ['onclick' => 'addConnection(this, '. $word['id'] . ')'] ) ?>
+                    <?php endif ?>
+                <?php endif ?>
+                </td>
+
+
             </tr>
             <?php endforeach; ?>
         </tbody>

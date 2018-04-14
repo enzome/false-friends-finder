@@ -96,7 +96,12 @@ class WordsTable extends Table
 
     public function findFriends() {
         $conn = ConnectionManager::get('default');
-        $words = $conn->execute('SELECT id, word, flag, hidden FROM words GROUP BY word HAVING count(*) > 1 ORDER BY words.flag DESC');
+        $words = $conn->execute('SELECT words.id, words.word, words.flag, words.hidden, word_connections_via_words.id AS connection_id, word_connections_via_words.completed AS completed
+FROM words
+LEFT JOIN word_connections AS word_connections_via_words ON words.id = word_connections_via_words.from_id
+GROUP BY word
+HAVING COUNT( * ) >1
+ORDER BY words.flag DESC ');
         return $words;
     }
 

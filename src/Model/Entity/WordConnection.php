@@ -11,7 +11,12 @@ use Cake\ORM\Entity;
  * @property int $to_id
  * @property int $classification_id
  * @property string $description
+ * @property string $from_meaning
+ * @property string $to_meaning
+ * @property int $completed
  *
+ * @property \App\Model\Entity\Word $from_word
+ * @property \App\Model\Entity\Word $to_word
  * @property \App\Model\Entity\Word $word
  * @property \App\Model\Entity\Classification $classification
  */
@@ -32,7 +37,13 @@ class WordConnection extends Entity
         'to_id' => true,
         'classification_id' => true,
         'description' => true,
+        'from_meaning' => true,
+        'to_meaning' => true,
+        'completed' => true,
+        'from_word' => true,
+        'to_word' => true,
         'word' => true,
-        'classification' => true
+        'classification' => true,
+        'completed_by' => true
     ];
 }

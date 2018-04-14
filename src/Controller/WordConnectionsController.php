@@ -96,7 +96,16 @@ class WordConnectionsController extends AppController
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $wordConnection = $this->WordConnections->patchEntity($wordConnection, $this->request->getData());
+            if (($wordConnection['from_meaning'] != null) || ($wordConnection['to_meaning'] != null)) {$wordConnection->completed = true;} else {$wordConnection->completed = false;}
+            if ($this->request->session()->check('Name') && empty($wordConnection->completed_by) )
+                {
+                        $wordConnection->completed_by = $this->request->session()->read('Name');
+                        $this->loadModel('Scores');
+                        $this->Scores->addpoints($this->request->session()->read('Name'), 'explain');
+                }
             if ($this->WordConnections->save($wordConnection)) {
+                $this->addPoints(4);
+
                 $this->Flash->success(__('The word connection has been saved.'));
 
                 return $this->redirect(['action' => 'index']);

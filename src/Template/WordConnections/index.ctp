@@ -23,7 +23,6 @@
     <table cellpadding="0" cellspacing="0">
         <thead>
             <tr>
-                <th scope="col"><?= $this->Paginator->sort('id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('from_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('to_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('classification_id') ?></th>
@@ -34,9 +33,8 @@
         <tbody>
             <?php foreach ($wordConnections as $wordConnection): ?>
             <tr>
-                <td><?= $this->Number->format($wordConnection->id) ?></td>
-                <td><?= $wordConnection->has('from_word') ? $this->Html->link($wordConnection->from_word->word, ['controller' => 'Words', 'action' => 'view', $wordConnection->from_word->id]) : '' ?></td>
-                <td><?= $wordConnection->has('to_word') ? $this->Html->link($wordConnection->to_word->word, ['controller' => 'Words', 'action' => 'view', $wordConnection->to_word->id]) : '' ?></td>
+                <td><?= $wordConnection->has('from_word') ? $this->Html->link($wordConnection->from_word->word, ['controller' => 'Words', 'action' => 'view', $wordConnection->from_word->id]) : '' ?><br><?= $wordConnection->from_meaning ?></td>
+                <td><?= $wordConnection->has('to_word') ? $this->Html->link($wordConnection->to_word->word, ['controller' => 'Words', 'action' => 'view', $wordConnection->to_word->id]) : '' ?><br><?= $wordConnection->to_meaning ?></td></td>
                 <td><?= $wordConnection->has('classification') ? $this->Html->link($wordConnection->classification->name, ['controller' => 'Classifications', 'action' => 'view', $wordConnection->classification->id]) : '' ?></td>
                 <td><?= h($wordConnection->description) ?></td>
                 <td class="actions">

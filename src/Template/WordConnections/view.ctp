@@ -24,7 +24,7 @@
     </ul>
 </nav>
 <div class="wordConnections view large-9 medium-8 columns content">
-    <h3><?= h($wordConnection->id) ?></h3>
+    <h3><?= h($wordConnection->from_word->word) ?> vs <?= h($wordConnection->to_word->word) ?></h3>
     <table class="vertical-table">
         <tr>
             <th scope="row"><?= __('From Word') ?></th>
@@ -39,12 +39,16 @@
             <td><?= $wordConnection->has('classification') ? $this->Html->link($wordConnection->classification->name, ['controller' => 'Classifications', 'action' => 'view', $wordConnection->classification->id]) : '' ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Description') ?></th>
-            <td><?= h($wordConnection->description) ?></td>
+            <th scope="row"><?= __('From Meaning') ?></th>
+            <td><?= h($wordConnection->from_meaning) ?></td>
         </tr>
         <tr>
-            <th scope="row"><?= __('Id') ?></th>
-            <td><?= $this->Number->format($wordConnection->id) ?></td>
+            <th scope="row"><?= __('To Meaning') ?></th>
+            <td><?= h($wordConnection->to_meaning) ?></td>
+        </tr>
+        <tr>
+            <th scope="row"><?= __('Description') ?></th>
+            <td><?= h($wordConnection->description) ?></td>
         </tr>
     </table>
 </div>

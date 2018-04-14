@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: False Friends Finder\n"
-"POT-Creation-Date: 2018-04-14 01:15+0200\n"
-"PO-Revision-Date: 2018-04-14 01:28+0200\n"
+"POT-Creation-Date: 2018-04-14 11:29+0200\n"
+"PO-Revision-Date: 2018-04-14 11:30+0200\n"
 "Last-Translator: Enzo Angiulli <mynameisenzo@gmail.com>\n"
 "Language-Team: Enzo Team\n"
 "Language: it\n"
@@ -83,11 +83,11 @@ msgstr "Il collegamento di parola è stato salvato."
 msgid "The word connection could not be saved. Please, try again."
 msgstr "Il collegamento non è stata salvato. Prova di nuovo."
 
-#: Controller/WordConnectionsController.php:124
+#: Controller/WordConnectionsController.php:122
 msgid "The word connection has been deleted."
 msgstr "La collegamento è stata eliminata."
 
-#: Controller/WordConnectionsController.php:126
+#: Controller/WordConnectionsController.php:124
 msgid "The word connection could not be deleted. Please, try again."
 msgstr "Il collegamento non è stata salvato. Prova di nuovo."
 
@@ -104,8 +104,7 @@ msgstr "La posizione della parola è stata salvata."
 #: Controller/WordLocationsController.php:95
 #: Controller/WordLocationsController.php:120
 msgid "The word location could not be saved. Please, try again."
-msgstr ""
-"La posizione della parola non può essere salvata. Per favore, riprova."
+msgstr "La posizione della parola non può essere salvata. Per favore, riprova."
 
 #: Controller/WordLocationsController.php:138
 msgid "The word location has been deleted."
@@ -199,7 +198,7 @@ msgstr "Cancella URL"
 
 #: Template/Classifications/add.ctp:14 Template/Classifications/edit.ctp:20
 #: Template/Classifications/view.ctp:16 Template/WordConnections/add.ctp:17
-#: Template/WordConnections/edit.ctp:23 Template/WordConnections/index.ctp:17
+#: Template/WordConnections/edit.ctp:21 Template/WordConnections/index.ctp:17
 #: Template/WordConnections/view.ctp:22
 msgid "List Classifications"
 msgstr "Elenca Classificazioni"
@@ -224,7 +223,7 @@ msgstr "Aggiungi Classificazione"
 #: Template/Classifications/add.ctp:27 Template/Classifications/edit.ctp:33
 #: Template/Languages/add.ctp:27 Template/Languages/edit.ctp:33
 #: Template/LinkSuggestions/add.ctp:21 Template/WordConnections/add.ctp:32
-#: Template/WordConnections/edit.ctp:38 Template/WordLocations/add.ctp:29
+#: Template/WordConnections/edit.ctp:36 Template/WordLocations/add.ctp:29
 #: Template/WordLocations/deleteurl.ctp:32 Template/WordLocations/edit.ctp:35
 #: Template/Words/add.ctp:30 Template/Words/edit.ctp:36
 msgid "Submit"
@@ -235,7 +234,7 @@ msgstr "Salva"
 #: Template/Languages/index.ctp:37 Template/Languages/view.ctp:52
 #: Template/WordConnections/edit.ctp:15 Template/WordConnections/index.ctp:45
 #: Template/WordLocations/edit.ctp:15 Template/WordLocations/index.ctp:41
-#: Template/Words/edit.ctp:15 Template/Words/friends.ctp:45
+#: Template/Words/edit.ctp:15 Template/Words/friends.ctp:44
 #: Template/Words/index.ctp:41 Template/Words/view.ctp:60
 msgid "Delete"
 msgstr "Cancella"
@@ -257,7 +256,7 @@ msgid "Edit Classification"
 msgstr "Modifica Classificazione"
 
 #: Template/Classifications/index.ctp:14 Template/Classifications/view.ctp:17
-#: Template/WordConnections/add.ctp:18 Template/WordConnections/edit.ctp:24
+#: Template/WordConnections/add.ctp:18 Template/WordConnections/edit.ctp:22
 #: Template/WordConnections/index.ctp:18 Template/WordConnections/view.ctp:23
 msgid "New Classification"
 msgstr "Nuova Classificazione"
@@ -419,6 +418,18 @@ msgstr ""
 msgid "Suggest a link to scrape"
 msgstr "Suggerisci un link!"
 
+#: Template/Layout/default.ctp:52
+msgid "Player name"
+msgstr "Il tuo nome"
+
+#: Template/Layout/default.ctp:57
+msgid "Play"
+msgstr "Vai alla ricerca!"
+
+#: Template/Layout/default.ctp:62
+msgid "Hello"
+msgstr "Hello"
+
 #: Template/Layout/error.ctp:35
 msgid "Error"
 msgstr "Errore"
@@ -431,13 +442,13 @@ msgstr "Indietro"
 msgid "Add Link Suggestion"
 msgstr "Aggiungere Link suggerimento"
 
-#: Template/WordConnections/add.ctp:15 Template/WordConnections/edit.ctp:21
-#: Template/WordConnections/index.ctp:15 Template/WordConnections/view.ctp:18
+#: Template/WordConnections/add.ctp:15 Template/WordConnections/index.ctp:15
+#: Template/WordConnections/view.ctp:18
 msgid "List From Words"
 msgstr "Elenco dalle parole (Da)"
 
-#: Template/WordConnections/add.ctp:16 Template/WordConnections/edit.ctp:22
-#: Template/WordConnections/index.ctp:16 Template/WordConnections/view.ctp:19
+#: Template/WordConnections/add.ctp:16 Template/WordConnections/index.ctp:16
+#: Template/WordConnections/view.ctp:19
 msgid "New From Word"
 msgstr "Nuova parola “Da”"
 
@@ -445,9 +456,15 @@ msgstr "Nuova parola “Da”"
 msgid "Add Word Connection"
 msgstr "Nuova Amicizia"
 
-#: Template/WordConnections/edit.ctp:30 Template/WordConnections/view.ctp:14
+#: Template/WordConnections/edit.ctp:28 Template/WordConnections/view.ctp:14
 msgid "Edit Word Connection"
 msgstr "Modifica collegamento"
+
+#: Template/WordConnections/edit.ctp:30 Template/WordConnections/edit.ctp:31
+msgid ""
+"Meaning of word <strong>{0}</strong> in language {1}, explained in Italian"
+msgstr ""
+"Significato della parola <strong>{0}</strong> nella lingua {1}, in italiano"
 
 #: Template/WordConnections/index.ctp:22
 msgid "Word Connections"
@@ -540,17 +557,21 @@ msgstr "Modifica parola"
 msgid "Options"
 msgstr "Opzioni"
 
-#: Template/Words/friends.ctp:43
+#: Template/Words/friends.ctp:42
 msgid "Sources:"
 msgstr "Fonti:"
 
-#: Template/Words/friends.ctp:46
+#: Template/Words/friends.ctp:45
 msgid "Hide"
 msgstr "Nascondi"
 
-#: Template/Words/friends.ctp:47
+#: Template/Words/friends.ctp:48
 msgid "False Friend!"
 msgstr "Falso amico!"
+
+#: Template/Words/friends.ctp:51
+msgid "Explain!"
+msgstr "Spiega!"
 
 #: Template/Words/index.ctp:22
 msgid "Words"
@@ -571,3 +592,6 @@ msgstr "Riferenze"
 #: Template/Words/view.ctp:46
 msgid "Word Id"
 msgstr "Id"
+
+#~ msgid "Meaning of word {0} in language {1}, explained in Italian"
+#~ msgstr "Significato della parola {0} in linga {1}, descritto in italiano"

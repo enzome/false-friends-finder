@@ -53,6 +53,12 @@ class AppController extends Controller
         //$this->loadComponent('Csrf');
     }
 
+    public function addPoints($points = null) {
+        $current = $this->request->session()->read('Points');
+        $new = $current + $points;
+        $this->request->session()->write('Points', $new);
+    }
+
     public function beforeRender(Event $event)
     {
         if ($this->request->session()->check('Language')) {

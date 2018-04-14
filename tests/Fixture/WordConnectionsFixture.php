@@ -22,6 +22,9 @@ class WordConnectionsFixture extends TestFixture
         'to_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         'classification_id' => ['type' => 'integer', 'length' => 11, 'unsigned' => false, 'null' => true, 'default' => null, 'comment' => '', 'precision' => null, 'autoIncrement' => null],
         'description' => ['type' => 'string', 'length' => 255, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
+        'from_meaning' => ['type' => 'string', 'length' => 512, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
+        'to_meaning' => ['type' => 'string', 'length' => 512, 'null' => true, 'default' => null, 'collate' => 'utf8_general_ci', 'comment' => '', 'precision' => null, 'fixed' => null],
+        'completed' => ['type' => 'tinyinteger', 'length' => 4, 'unsigned' => false, 'null' => true, 'default' => '0', 'comment' => '', 'precision' => null],
         '_indexes' => [
             'firstword_id_idx' => ['type' => 'index', 'columns' => ['from_id'], 'length' => []],
             'secondword_id_idx' => ['type' => 'index', 'columns' => ['to_id'], 'length' => []],
@@ -51,7 +54,10 @@ class WordConnectionsFixture extends TestFixture
             'from_id' => 1,
             'to_id' => 1,
             'classification_id' => 1,
-            'description' => 'Lorem ipsum dolor sit amet'
+            'description' => 'Lorem ipsum dolor sit amet',
+            'from_meaning' => 'Lorem ipsum dolor sit amet',
+            'to_meaning' => 'Lorem ipsum dolor sit amet',
+            'completed' => 1
         ],
     ];
 }

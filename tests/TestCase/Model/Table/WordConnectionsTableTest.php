@@ -25,9 +25,13 @@ class WordConnectionsTableTest extends TestCase
      */
     public $fixtures = [
         'app.word_connections',
-        'app.words',
+        'app.from_words',
         'app.languages',
+        'app.words',
         'app.word_locations',
+        'app.first_word_connections',
+        'app.to_words',
+        'app.second_word_connections',
         'app.classifications'
     ];
 

@@ -37,12 +37,37 @@ $cakeDescription = 'False Friend Finder';
     <nav class="top-bar expanded" data-topbar role="navigation">
         <ul class="title-area large-3 medium-4 columns">
             <li class="name">
-                <h1><a href=""><?= __('False Friends Finder') ?></a></h1>
+                <h1><a href="<?= $this->Url->build(['controller' => 'words', 'action'=>'friends']) ?>"><?= __('False Friends Finder') ?></a></h1>
             </li>
         </ul>
         <div class="top-bar-section">
             <ul class="left">
                 <li><?= $this->Html->link(__('Suggest a link to scrape'), ['controller' => 'link_suggestions', 'action' => 'add']) ?></li>
+                <li><?= $this->Html->image('trophy.png', ['url' => ['controller' => 'scores', 'action' => 'index'], 'width'=>'30px', 'style' => 'height: 30px; margin: 3px;margin-top: 4px;']) ?></li>
+                <?php if (!$this->request->session()->check('Name')) { ?>
+
+                <li>
+                    <?php
+                        echo $this->Form->create('name', ['url' => $this->Url->build(['controller' => 'words', 'action' => 'newplayer'])]) ;
+                        echo $this->Form->input('name', ['label' => false, 'placeholder' => __('Player name')]);
+                        ?>
+
+                </li>
+                <li><?php
+                        echo $this->Form->submit(__('Play')) ;
+                        echo $this->Form->end();
+                 ?></li>
+
+                 <?php } else {
+                    echo '<li>' . $this->Form->postLink(__('Hello') . ' ' .  $this->request->session()->read('Name'), ['action' => 'logout', 'controller' => 'words'], ['confirm' => __('Are you sure you want to log out?')] ) . '</li>';
+                 } ?>
+                 <?php if ($this->request->session()->check('Points')): ?>
+                    <?php $beernum = floor($this->request->session()->read('Points') / 20) ?>
+                     <li><?php for ($i=0; $i < $beernum; $i++) {
+                         echo $this->Html->image('beer.png', ['style' => 'height: 30px; margin: 3px;margin-top: 8px;']);
+                     } ?></li>
+                 <?php endif ?>
+
             </ul>
             <ul class="right">
                 <li><?= $this->Html->link('EN', ['controller' => 'words', 'action' => 'setlang', 'en']) ?></li>

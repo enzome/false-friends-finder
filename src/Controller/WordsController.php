@@ -79,6 +79,23 @@ class WordsController extends AppController
         $this->set('locations', $this->Words->findByWordAndLanguageId($word, $language)->contain(['WordLocations'])->first()->extract(['word_locations']));
     }
 
+    public function newplayer() {
+        if ($this->request->is('post')) {
+            $this->request->session()->write('Name', $this->request->getData('name'));
+            $this->LoadModel('Scores');
+            $points = $this->Scores->findByName($this->request->getData('name'))->first()->points;
+            $this->request->session()->write('Points', $points);
+            $this->Flash->success(__('Playing as {0}, you already have {1} points', [$this->request->getData('name'), $points]));
+            $this->redirect($this->referer());
+        }
+    }
+    public function logout() {
+        $this->request->session()->destroy();
+        $this->Flash->success(__('Logout OK'));
+        $this->redirect($this->referer());
+    }
+
+
     /**
      * Add method
      *
@@ -154,7 +171,11 @@ class WordsController extends AppController
             foreach ($friends as $friend) {
                 $this->Words->hide($friend['id']);
             }
+            $this->addPoints(0.5);
+            $this->loadModel('Scores');
+            $this->Scores->addpoints($this->request->session()->read('Name'), 'hide');
         }
+
         return $this->response->withStringBody('hidden');
     }
     /**
