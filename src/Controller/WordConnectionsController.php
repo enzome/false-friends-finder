@@ -34,10 +34,10 @@ class WordConnectionsController extends AppController
             $to = $this->WordConnections->Words->findByWord($from['word'])->where(['language_id !=' => $from['language_id'] ])->first();
             $connection->from_id = $from['id'];
             $connection->to_id = $to['id'];
-            if($this->WordConnections->save($connection)) {
+            if($result = $this->WordConnections->save($connection)) {
                 $this->WordConnections->Words->flag($from['id']);
                 $this->WordConnections->Words->flag($to['id']);
-                return $this->response->withStringBody('OK');
+                return $this->response->withStringBody($result->id);
             }
         }
     }

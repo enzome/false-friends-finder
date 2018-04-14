@@ -91,7 +91,15 @@ $this->end();
     }
     function addConnection(me, myid) {
         $.post("<?= $this->Url->build(['controller' => 'WordConnections', 'action' => 'addconnection']) ?>", {id: myid}  ).done(function ( data ){
-            if (data === 'OK') {$(me).parents('tr').css('background-color', '#c6ffc6');} else {$(me).parents('tr').css('background-color', 'red');alert('data')}
+            if (data) {
+                $(me).parents('tr').css('background-color', '#c6ffc6');
+                var href = "<?= $this->Url->build(['controller' => 'word_connections', 'action' => 'edit']) ?>/" + data;
+                $(me).attr('href', href);
+                $(me).attr('_target', 'blank');
+                $(me).text('<?= __('Explain!') ?>');
+                // $(me).parent('td').html('<a href="' + href +'" _target="blank"><?= __('Explain!') ?></a>');
+            } else {$(me).parents('tr').css('background-color', 'red');         }
+
         })
 
     }
