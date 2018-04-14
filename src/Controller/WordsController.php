@@ -86,13 +86,13 @@ class WordsController extends AppController
             $points = $this->Scores->findByName($this->request->getData('name'))->first()->points;
             $this->request->session()->write('Points', $points);
             $this->Flash->success(__('Playing as {0}, you already have {1} points', [$this->request->getData('name'), $points]));
-            $this->redirect($this->referer());
+            $this->redirect(['controller' => 'words', 'action' => 'friends']);
         }
     }
     public function logout() {
         $this->request->session()->destroy();
         $this->Flash->success(__('Logout OK'));
-        $this->redirect($this->referer());
+        $this->redirect(['controller' => 'words', 'action' => 'friends']);
     }
 
 
