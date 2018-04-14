@@ -92,7 +92,7 @@ class WordConnectionsController extends AppController
     public function edit($id = null)
     {
         $wordConnection = $this->WordConnections->get($id, [
-            'contain' => []
+            'contain' => ['fromWords.Languages', 'toWords.Languages']
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
             $wordConnection = $this->WordConnections->patchEntity($wordConnection, $this->request->getData());
@@ -103,8 +103,6 @@ class WordConnectionsController extends AppController
             }
             $this->Flash->error(__('The word connection could not be saved. Please, try again.'));
         }
-        $fromWords = $this->WordConnections->FromWords->find('list', ['limit' => 200]);
-        $toWords = $this->WordConnections->ToWords->find('list', ['limit' => 200]);
         $classifications = $this->WordConnections->Classifications->find('list', ['limit' => 200]);
         $this->set(compact('wordConnection', 'fromWords', 'toWords', 'classifications'));
     }

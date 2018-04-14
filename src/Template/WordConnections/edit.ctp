@@ -18,8 +18,6 @@
             )
         ?></li>
         <li><?= $this->Html->link(__('List Word Connections'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List From Words'), ['controller' => 'Words', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New From Word'), ['controller' => 'Words', 'action' => 'add']) ?></li>
         <li><?= $this->Html->link(__('List Classifications'), ['controller' => 'Classifications', 'action' => 'index']) ?></li>
         <li><?= $this->Html->link(__('New Classification'), ['controller' => 'Classifications', 'action' => 'add']) ?></li>
     </ul>
@@ -29,8 +27,8 @@
     <fieldset>
         <legend><?= __('Edit Word Connection') ?></legend>
         <?php
-            echo $this->Form->control('from_id', ['options' => $fromWords, 'empty' => true]);
-            echo $this->Form->control('to_id', ['options' => $toWords, 'empty' => true]);
+            echo $this->Form->control('from_meaning', ['escape' => false, 'label' => __('Meaning of word <strong>{0}</strong> in language {1}, explained in Italian', [$wordConnection->FromWords['word'], $wordConnection->FromWords['language']['name']])]);
+            echo $this->Form->control('to_meaning', ['escape' => false, 'label' => __('Meaning of word <strong>{0}</strong> in language {1}, explained in Italian', [$wordConnection->ToWords['word'], $wordConnection->ToWords['language']['name']])]);
             echo $this->Form->control('classification_id', ['options' => $classifications, 'empty' => true]);
             echo $this->Form->control('description');
         ?>
