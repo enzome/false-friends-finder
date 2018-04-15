@@ -20,7 +20,7 @@ class WordConnectionsController extends AppController
      */
     public function index()
     {
-        $wordConnections = $this->WordConnections->find()->contain( ['FromWords', 'ToWords', 'Classifications'])->where(['from_meaning IS NULL', 'classification_id IS NULL']);
+        $wordConnections = $this->WordConnections->find()->contain( ['FromWords', 'ToWords', 'Classifications']);
 
         $this->set(compact('wordConnections'));
     }
