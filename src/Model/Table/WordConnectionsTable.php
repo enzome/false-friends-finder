@@ -69,7 +69,9 @@ class WordConnectionsTable extends Table
         $validator
             ->scalar('description')
             ->maxLength('description', 255)
-            ->allowEmpty('description');
+            ->allowEmpty('description')
+            ->allowEmpty('to_translation')
+            ->allowEmpty('from_translation');
 
         return $validator;
     }

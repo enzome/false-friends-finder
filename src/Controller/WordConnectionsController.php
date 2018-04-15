@@ -20,10 +20,8 @@ class WordConnectionsController extends AppController
      */
     public function index()
     {
-        $this->paginate = [
-            'contain' => ['FromWords', 'ToWords', 'Classifications']
-        ];
-        $wordConnections = $this->paginate($this->WordConnections);
+        $wordConnections = $this->WordConnections->find()->contain( ['FromWords', 'ToWords', 'Classifications'])->where(['from_meaning IS NULL', 'classification_id IS NULL']);
+
         $this->set(compact('wordConnections'));
     }
 
@@ -127,12 +125,14 @@ class WordConnectionsController extends AppController
     {
         $this->request->allowMethod(['post', 'delete']);
         $wordConnection = $this->WordConnections->get($id);
+        $this->WordConnections->fromWords->unflag($wordConnection->from_id);
+        $this->WordConnections->toWords->unflag($wordConnection->to_id);
         if ($this->WordConnections->delete($wordConnection)) {
             $this->Flash->success(__('The word connection has been deleted.'));
         } else {
             $this->Flash->error(__('The word connection could not be deleted. Please, try again.'));
         }
 
-        return $this->redirect(['action' => 'index']);
+        return $this->redirect($this->referer());
     }
 }

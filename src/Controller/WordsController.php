@@ -63,8 +63,14 @@ class WordsController extends AppController
 
         $words = $this->Words->findFriends();
         $wordscount = $words->count();
+        // $hiddencount = collection($words)->countBy(function($word) {return $word['hidden'] === false;})->first();
+        $hiddencount = 0;
+        foreach ($words as $word) {
+            if ($word['hidden'] == true) $hiddencount++;
+        }
+        $wordscount = $wordscount - $hiddencount;
         $languages = $this->Words->Languages->find();
-        $this->set(compact ('words', 'languages', 'flagged', 'wordscount'));
+        $this->set(compact ('words', 'languages', 'flagged', 'wordscount', 'hiddencount'));
     }
 
     public function flagged () {

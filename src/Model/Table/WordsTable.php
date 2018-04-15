@@ -110,6 +110,11 @@ ORDER BY words.flag DESC ');
         $toFlag->flag = true;
         $this->save($toFlag);
     }
+    public function unflag($id) {
+        $toFlag = $this->get($id);
+        $toFlag->flag = false;
+        $this->save($toFlag);
+    }
     public function hide($id) {
         $toFlag = $this->get($id);
         $toFlag->hidden = true;

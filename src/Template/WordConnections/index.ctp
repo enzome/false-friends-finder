@@ -25,19 +25,28 @@
             <tr>
                 <th scope="col"><?= $this->Paginator->sort('from_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('to_id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('classification_id') ?></th>
-                <th scope="col"><?= $this->Paginator->sort('description') ?></th>
-                <th scope="col" class="actions"><?= __('Actions') ?></th>
+<!--                 <th scope="col"><?= $this->Paginator->sort('description') ?></th>
+ -->                <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
         <tbody>
             <?php foreach ($wordConnections as $wordConnection): ?>
             <tr>
-                <td><?= $wordConnection->has('from_word') ? $this->Html->link($wordConnection->from_word->word, ['controller' => 'Words', 'action' => 'view', $wordConnection->from_word->id]) : '' ?><br><?= $wordConnection->from_meaning ?></td>
-                <td><?= $wordConnection->has('to_word') ? $this->Html->link($wordConnection->to_word->word, ['controller' => 'Words', 'action' => 'view', $wordConnection->to_word->id]) : '' ?><br><?= $wordConnection->to_meaning ?></td></td>
-                <td><?= $wordConnection->has('classification') ? $this->Html->link($wordConnection->classification->name, ['controller' => 'Classifications', 'action' => 'view', $wordConnection->classification->id]) : '' ?></td>
-                <td><?= h($wordConnection->description) ?></td>
-                <td class="actions">
+                <td>
+<?= $this->Html->link($wordConnection->from_word->word, ['controller' => 'Words', 'action' => 'view', $wordConnection->from_word->id]) . " (" . __('HU') . ")" ?>   &#8800;  <?= $this->Html->link($wordConnection->to_word->word, ['controller' => 'Words', 'action' => 'view', $wordConnection->to_word->id]) . " (" . __('IT') . ")" ?><br>
+                    <?= $this->Html->link($wordConnection->from_word->word, ['controller' => 'Words', 'action' => 'view', $wordConnection->from_word->id]) . " (" . __('HU') . ")" ?> = <?= $wordConnection->to_translation; ?> (<?= __('IT') ?>)<br><br>
+               <?= __('Classification') ?>: <?= $wordConnection->has('classification') ? $this->Html->link($wordConnection->classification->name, ['controller' => 'Classifications', 'action' => 'view', $wordConnection->classification->id]) : '' ?><br><br>
+
+
+                    <?= $wordConnection->from_meaning ?><br>
+
+                </td>
+
+                <td>  <?= $this->Html->link($wordConnection->to_word->word, ['controller' => 'Words', 'action' => 'view', $wordConnection->to_word->id]) . " (" . __('IT') . ")" ?> &#8800;  <?= $this->Html->link($wordConnection->from_word->word, ['controller' => 'Words', 'action' => 'view', $wordConnection->from_word->id]) . " (" . __('HU') . ")" ?><br>
+                    <?= $this->Html->link($wordConnection->to_word->word, ['controller' => 'Words', 'action' => 'view', $wordConnection->to_word->id]) . " (" . __('IT') . ")" ?> = <?= $wordConnection->from_translation; ?> (<?= __('HU') ?>)
+                    <br><br><br><br><?= $wordConnection->to_meaning ?></td>
+<!--                 <td><?= $wordConnection->description ?></td>
+ -->                <td class="actions">
                     <?= $this->Html->link(__('View'), ['action' => 'view', $wordConnection->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['action' => 'edit', $wordConnection->id]) ?>
                     <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $wordConnection->id], ['confirm' => __('Are you sure you want to delete # {0}?', $wordConnection->id)]) ?>

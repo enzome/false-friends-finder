@@ -44,6 +44,8 @@ class WordConnection extends Entity
         'to_word' => true,
         'word' => true,
         'classification' => true,
-        'completed_by' => true
+        'completed_by' => true,
+        'from_translation' => true,
+        'to_translation' => true
     ];
 }
