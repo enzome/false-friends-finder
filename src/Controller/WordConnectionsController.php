@@ -21,8 +21,13 @@ class WordConnectionsController extends AppController
     public function index()
     {
         $wordConnections = $this->WordConnections->find()->contain( ['FromWords', 'ToWords', 'Classifications'])->order('classification_id ASC');
+        $showactions = true;
+        if (null !=$this->request->query('tabella')) {
+            $this->viewBuilder()->setLayout('tabella');
+            $showactions = false;
+        }
+        $this->set(compact('wordConnections', 'showactions'));
 
-        $this->set(compact('wordConnections'));
     }
 
     public function addconnection() {

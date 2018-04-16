@@ -4,6 +4,7 @@
  * @var \App\Model\Entity\WordConnection[]|\Cake\Collection\CollectionInterface $wordConnections
  */
 ?>
+<?php if ($showactions): ?>
 <nav class="large-3 medium-4 columns" id="actions-sidebar">
     <ul class="side-nav">
         <li class="heading"><?= __('Actions') ?></li>
@@ -18,6 +19,8 @@
         <li><?= $this->Html->link(__('New Classification'), ['controller' => 'Classifications', 'action' => 'add']) ?></li>
     </ul>
 </nav>
+
+<?php endif ?>
 <div class="wordConnections index large-9 medium-8 columns content">
     <h3><?= __('Word Connections') ?></h3>
     <table cellpadding="0" cellspacing="0">
@@ -31,31 +34,21 @@
             <?php foreach ($wordConnections as $wordConnection): ?>
             <tr>
                 <td>
-<?= $this->Html->link($wordConnection->from_word->word, ['controller' => 'Words', 'action' => 'view', $wordConnection->from_word->id]) . " (" . __('HU') . ")" ?>   &#8800;  <?= $this->Html->link($wordConnection->to_word->word, ['controller' => 'Words', 'action' => 'view', $wordConnection->to_word->id]) . " (" . __('IT') . ")" ?><br>
-                    <?= $this->Html->link($wordConnection->from_word->word, ['controller' => 'Words', 'action' => 'view', $wordConnection->from_word->id]) . " (" . __('HU') . ")" ?> = <?= $wordConnection->to_translation; ?> (<?= __('IT') ?>)<br><br>
-               <?= __('Classification') ?>: <?= $wordConnection->has('classification') ? $this->Html->link($wordConnection->classification->name, ['controller' => 'Classifications', 'action' => 'view', $wordConnection->classification->id]) : '' ?><br><br>
+<?= $this->Html->link($wordConnection->from_word->word, ['controller' => 'Words', 'action' => 'view', $wordConnection->from_word->id, '_full' => true]) . " (" . __('HU') . ")" ?>   &#8800;  <?= $this->Html->link($wordConnection->to_word->word, ['controller' => 'Words', 'action' => 'view', $wordConnection->to_word->id, '_full' => true]) . " (" . __('IT') . ")" ?><br>
+                    <?= $this->Html->link($wordConnection->from_word->word, ['controller' => 'Words', 'action' => 'view', $wordConnection->from_word->id, '_full' => true]) . " (" . __('HU') . ")" ?> = <?= $wordConnection->to_translation; ?> (<?= __('IT') ?>)<br><br>
+               <?= __('Classification') ?>: <?= $wordConnection->has('classification') ? $this->Html->link($wordConnection->classification->name, ['controller' => 'Classifications', 'action' => 'view', $wordConnection->classification->id, '_full' => true]) : '' ?><br><br>
 
 
                     <?= $wordConnection->from_meaning ?><br>
 
                 </td>
 
-                <td>  <?= $this->Html->link($wordConnection->to_word->word, ['controller' => 'Words', 'action' => 'view', $wordConnection->to_word->id]) . " (" . __('IT') . ")" ?> &#8800;  <?= $this->Html->link($wordConnection->from_word->word, ['controller' => 'Words', 'action' => 'view', $wordConnection->from_word->id]) . " (" . __('HU') . ")" ?><br>
-                    <?= $this->Html->link($wordConnection->to_word->word, ['controller' => 'Words', 'action' => 'view', $wordConnection->to_word->id]) . " (" . __('IT') . ")" ?> = <?= $wordConnection->from_translation; ?> (<?= __('HU') ?>)
+                <td>  <?= $this->Html->link($wordConnection->to_word->word, ['controller' => 'Words', 'action' => 'view', $wordConnection->to_word->id, '_full' => true]) . " (" . __('IT') . ")" ?> &#8800;  <?= $this->Html->link($wordConnection->from_word->word, ['controller' => 'Words', 'action' => 'view', $wordConnection->from_word->id, '_full' => true]) . " (" . __('HU') . ")" ?><br>
+                    <?= $this->Html->link($wordConnection->to_word->word, ['controller' => 'Words', 'action' => 'view', $wordConnection->to_word->id, '_full' => true]) . " (" . __('IT') . ")" ?> = <?= $wordConnection->from_translation; ?> (<?= __('HU') ?>)
                     <br><br><br><br><?= $wordConnection->to_meaning ?></td>
 
             </tr>
             <?php endforeach; ?>
         </tbody>
     </table>
-    <div class="paginator">
-        <ul class="pagination">
-            <?= $this->Paginator->first('<< ' . __('first')) ?>
-            <?= $this->Paginator->prev('< ' . __('previous')) ?>
-            <?= $this->Paginator->numbers() ?>
-            <?= $this->Paginator->next(__('next') . ' >') ?>
-            <?= $this->Paginator->last(__('last') . ' >>') ?>
-        </ul>
-        <p><?= $this->Paginator->counter(['format' => __('Page {{page}} of {{pages}}, showing {{current}} record(s) out of {{count}} total')]) ?></p>
-    </div>
 </div>
