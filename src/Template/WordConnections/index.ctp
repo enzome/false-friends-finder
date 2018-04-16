@@ -25,8 +25,6 @@
             <tr>
                 <th scope="col"><?= $this->Paginator->sort('from_id') ?></th>
                 <th scope="col"><?= $this->Paginator->sort('to_id') ?></th>
-<!--                 <th scope="col"><?= $this->Paginator->sort('description') ?></th>
- -->                <th scope="col" class="actions"><?= __('Actions') ?></th>
             </tr>
         </thead>
         <tbody>
@@ -45,12 +43,7 @@
                 <td>  <?= $this->Html->link($wordConnection->to_word->word, ['controller' => 'Words', 'action' => 'view', $wordConnection->to_word->id]) . " (" . __('IT') . ")" ?> &#8800;  <?= $this->Html->link($wordConnection->from_word->word, ['controller' => 'Words', 'action' => 'view', $wordConnection->from_word->id]) . " (" . __('HU') . ")" ?><br>
                     <?= $this->Html->link($wordConnection->to_word->word, ['controller' => 'Words', 'action' => 'view', $wordConnection->to_word->id]) . " (" . __('IT') . ")" ?> = <?= $wordConnection->from_translation; ?> (<?= __('HU') ?>)
                     <br><br><br><br><?= $wordConnection->to_meaning ?></td>
-<!--                 <td><?= $wordConnection->description ?></td>
- -->                <td class="actions">
-                    <?= $this->Html->link(__('View'), ['action' => 'view', $wordConnection->id]) ?>
-                    <?= $this->Html->link(__('Edit'), ['action' => 'edit', $wordConnection->id]) ?>
-                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $wordConnection->id], ['confirm' => __('Are you sure you want to delete # {0}?', $wordConnection->id)]) ?>
-                </td>
+
             </tr>
             <?php endforeach; ?>
         </tbody>
