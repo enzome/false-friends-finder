@@ -35,7 +35,7 @@ class ClassificationsController extends AppController
     public function view($id = null)
     {
         $classification = $this->Classifications->get($id, [
-            'contain' => ['WordConnections']
+            'contain' => ['WordConnections.FromWords','WordConnections.ToWords',]
         ]);
 
         $this->set('classification', $classification);

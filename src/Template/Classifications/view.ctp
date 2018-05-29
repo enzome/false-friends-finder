@@ -46,10 +46,10 @@
             <?php foreach ($classification->word_connections as $wordConnections): ?>
             <tr>
                 <td><?= h($wordConnections->id) ?></td>
-                <td><?= h($wordConnections->from_id) ?></td>
-                <td><?= h($wordConnections->to_id) ?></td>
+                <td><?= $this->Html->link($wordConnections['from_word']['word'], ['controller' => 'words', 'action' => 'view', $wordConnections['from_word']['id']]) ?></td>
+                <td><?= $this->Html->link($wordConnections['to_word']['word'], ['controller' => 'words', 'action' => 'view', $wordConnections['to_word']['id']]) ?></td>
                 <td><?= h($wordConnections->classification_id) ?></td>
-                <td><?= h($wordConnections->description) ?></td>
+                <td><?= $wordConnections->description ?></td>
                 <td class="actions">
                     <?= $this->Html->link(__('View'), ['controller' => 'WordConnections', 'action' => 'view', $wordConnections->id]) ?>
                     <?= $this->Html->link(__('Edit'), ['controller' => 'WordConnections', 'action' => 'edit', $wordConnections->id]) ?>
