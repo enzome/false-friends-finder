@@ -32,6 +32,7 @@
         </thead>
         <tbody>
             <?php foreach ($wordConnections as $wordConnection): ?>
+
             <tr>
                 <td>
 <?= $this->Html->link($wordConnection->from_word->word, ['controller' => 'Words', 'action' => 'view', $wordConnection->from_word->id, '_full' => true]) . " (" . __('HU') . ")" ?>   &#8800;  <?= $this->Html->link($wordConnection->to_word->word, ['controller' => 'Words', 'action' => 'view', $wordConnection->to_word->id, '_full' => true]) . " (" . __('IT') . ")" ?><br>

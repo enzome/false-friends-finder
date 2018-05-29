@@ -30,7 +30,7 @@
                 <td> <?php echo $score->points ?>
                     <?php $beernum = floor($score->points / 20);
                         for ($i=0; $i < $beernum; $i++) {
-                         echo $this->Html->image('beer.png', ['style' => 'height: 30px; margin: 3px;margin-top: 8px;']);
+                         echo $this->Html->image('star.png', ['style' => 'height: 30px; margin: 3px;margin-top: 8px;']);
                      }
 
                  ?></td>
